@@ -7,6 +7,7 @@ DataBase creation:
   3) Databases -> new database (ex: LogisticDB)
   4) New Querry
   5) Run the attached querry
+     
 Database sync:
   - On every push generate new .sql file:
        a) Databases/LogisticBD -> tasks -> generate script
