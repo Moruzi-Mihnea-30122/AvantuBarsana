@@ -58,6 +58,7 @@
             this.txtBox_ConfPassS.Name = "txtBox_ConfPassS";
             this.txtBox_ConfPassS.Size = new System.Drawing.Size(119, 20);
             this.txtBox_ConfPassS.TabIndex = 1;
+            this.txtBox_ConfPassS.UseSystemPasswordChar = true;
             // 
             // txtBox_PassS
             // 
@@ -65,6 +66,7 @@
             this.txtBox_PassS.Name = "txtBox_PassS";
             this.txtBox_PassS.Size = new System.Drawing.Size(119, 20);
             this.txtBox_PassS.TabIndex = 2;
+            this.txtBox_PassS.UseSystemPasswordChar = true;
             // 
             // txtBox_MailS
             // 
@@ -117,9 +119,13 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Sign Up";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox_Role
             // 
+            this.comboBox_Role.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_Role.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox_Role.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Role.FormattingEnabled = true;
             this.comboBox_Role.Items.AddRange(new object[] {
             "Manager",
@@ -175,7 +181,7 @@
             this.Controls.Add(this.txtBox_ConfPassS);
             this.Controls.Add(this.txtBox_UserS);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "Sign Up";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -29,7 +29,6 @@ namespace LogIn_SignUp
         private void btn_SignUpOpen_Click(object sender, EventArgs e)
         {
             Form3 logIn = new Form3();
-            this.Hide();
             logIn.Show();
         }
     }

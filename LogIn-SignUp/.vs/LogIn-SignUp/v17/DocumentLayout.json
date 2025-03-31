@@ -3,32 +3,31 @@
   "WorkspaceRootPath": "E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|e:\\proiect_ii\\avantubarsana\\login-signup\\login-signup\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|solutionrelative:login-signup\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|e:\\proiect_ii\\avantubarsana\\login-signup\\login-signup\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|solutionrelative:login-signup\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|e:\\proiect_ii\\avantubarsana\\login-signup\\login-signup\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|solutionrelative:login-signup\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|e:\\proiect_ii\\avantubarsana\\login-signup\\login-signup\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|solutionrelative:login-signup\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|e:\\proiect_ii\\avantubarsana\\login-signup\\login-signup\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|solutionrelative:login-signup\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|e:\\proiect_ii\\avantubarsana\\login-signup\\login-signup\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\login-signup\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|solutionrelative:login-signup\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|e:\\proiect_ii\\avantubarsana\\login-signup\\login-signup\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|solutionrelative:login-signup\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_8FI7P38_SQLEXPRESS/LogisticDB/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\login-signup\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|solutionrelative:login-signup\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\login-signup\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|solutionrelative:login-signup\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\login-signup\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|solutionrelative:login-signup\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\login-signup\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2634DBA5-290C-4648-ABFC-59D8402C4B75}|LogIn-SignUp\\LogIn-SignUp.csproj|solutionrelative:login-signup\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,36 +37,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Model1.edmx [Diagram1]",
-              "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\LogIn-SignUp\\Model1.edmx",
-              "RelativeDocumentMoniker": "LogIn-SignUp\\Model1.edmx",
-              "ToolTip": "E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\LogIn-SignUp\\Model1.edmx [Diagram1]",
-              "RelativeToolTip": "LogIn-SignUp\\Model1.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2025-03-31T12:49:00.722Z",
-              "EditorCaption": " [Diagram1]"
+              "DocumentIndex": 2,
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_8FI7P38_SQLEXPRESS/LogisticDB/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-31T16:29:26.367Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Form3.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\LogIn-SignUp\\Form3.cs",
               "RelativeDocumentMoniker": "LogIn-SignUp\\Form3.cs",
               "ToolTip": "E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\LogIn-SignUp\\Form3.cs",
               "RelativeToolTip": "LogIn-SignUp\\Form3.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA7wEQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T12:21:18.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Form3.cs [Design]",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\LogIn-SignUp\\Form3.cs",
               "RelativeDocumentMoniker": "LogIn-SignUp\\Form3.cs",
@@ -79,20 +76,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Form2.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\LogIn-SignUp\\Form2.cs",
               "RelativeDocumentMoniker": "LogIn-SignUp\\Form2.cs",
               "ToolTip": "E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\LogIn-SignUp\\Form2.cs",
               "RelativeToolTip": "LogIn-SignUp\\Form2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T12:03:50.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\LogIn-SignUp\\Form2.cs",
               "RelativeDocumentMoniker": "LogIn-SignUp\\Form2.cs",
@@ -104,20 +101,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\LogIn-SignUp\\Form1.cs",
               "RelativeDocumentMoniker": "LogIn-SignUp\\Form1.cs",
               "ToolTip": "E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\LogIn-SignUp\\Form1.cs",
               "RelativeToolTip": "LogIn-SignUp\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T11:52:42.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogIn-SignUp\\LogIn-SignUp\\Form1.cs",
               "RelativeDocumentMoniker": "LogIn-SignUp\\Form1.cs",

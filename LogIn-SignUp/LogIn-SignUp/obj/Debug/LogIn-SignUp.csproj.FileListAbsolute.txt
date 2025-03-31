@@ -13,3 +13,13 @@ E:\Proiect_II\AvantuBarsana\LogIn-SignUp\LogIn-SignUp\obj\Debug\LogIn-SignUp.exe
 E:\Proiect_II\AvantuBarsana\LogIn-SignUp\LogIn-SignUp\obj\Debug\LogIn-SignUp.pdb
 E:\Proiect_II\AvantuBarsana\LogIn-SignUp\LogIn-SignUp\obj\Debug\LogIn_SignUp.Form2.resources
 E:\Proiect_II\AvantuBarsana\LogIn-SignUp\LogIn-SignUp\obj\Debug\LogIn_SignUp.Form3.resources
+E:\Proiect_II\AvantuBarsana\LogIn-SignUp\LogIn-SignUp\bin\Debug\Model1.Context.tt
+E:\Proiect_II\AvantuBarsana\LogIn-SignUp\LogIn-SignUp\bin\Debug\Model1.tt
+E:\Proiect_II\AvantuBarsana\LogIn-SignUp\LogIn-SignUp\bin\Debug\Cart.cs
+E:\Proiect_II\AvantuBarsana\LogIn-SignUp\LogIn-SignUp\bin\Debug\Model1.Context.cs
+E:\Proiect_II\AvantuBarsana\LogIn-SignUp\LogIn-SignUp\bin\Debug\Model1.cs
+E:\Proiect_II\AvantuBarsana\LogIn-SignUp\LogIn-SignUp\bin\Debug\Model1.Designer.cs
+E:\Proiect_II\AvantuBarsana\LogIn-SignUp\LogIn-SignUp\bin\Debug\Order.cs
+E:\Proiect_II\AvantuBarsana\LogIn-SignUp\LogIn-SignUp\bin\Debug\Product.cs
+E:\Proiect_II\AvantuBarsana\LogIn-SignUp\LogIn-SignUp\bin\Debug\User.cs
+E:\Proiect_II\AvantuBarsana\LogIn-SignUp\LogIn-SignUp\bin\Debug\Model1.edmx.diagram
