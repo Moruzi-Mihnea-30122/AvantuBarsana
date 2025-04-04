@@ -39,12 +39,14 @@ namespace LogisticaDepozit
                 SqlCommand command = new SqlCommand("UPDATE Users\nSET Balance = " + x +"\nWHERE Username LIKE '" + menuPage.username +"';",myCon);
                 command.ExecuteNonQuery();
 
-
-                foreach (Control c in this.settingsPage.Controls)
+                if (this.settingsPage != null)
                 {
-                    if (c.TabIndex == 8)
+                    foreach (Control c in this.settingsPage.Controls)
                     {
-                        c.Text = x.ToString()+" RON";
+                        if (c.TabIndex == 8)
+                        {
+                            c.Text = x.ToString() + " RON";
+                        }
                     }
                 }
 

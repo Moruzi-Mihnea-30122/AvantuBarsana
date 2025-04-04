@@ -20,6 +20,7 @@ namespace LogisticaDepozit
         private SettingsForm settingsPage;
         private SqlConnection myCon = new SqlConnection();
         private DataSet dsUsers;
+        private AddFundsForm addBalancePage;
 
         // accesibile de catre orice clasa din proiectul curent
 
@@ -103,7 +104,8 @@ namespace LogisticaDepozit
 
         private void addBalanceClicked(object sender, EventArgs e)
         {
-
+            addBalancePage = new AddFundsForm(null,this);
+            addBalancePage.Show();
         }
 
         private void productStockClicked(object sender, EventArgs e)
