@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|c:\\apps\\ii\\proiect\\avantubarsana\\logisticadepozit\\logisticadepozit\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,16 +11,20 @@
       "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\addfundsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\addfundsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|c:\\apps\\ii\\proiect\\avantubarsana\\logisticadepozit\\logisticadepozit\\signupform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\signupform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\addfundsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\addfundsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\signupform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\signupform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\addfundsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\deleteaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,7 +94,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SignUpForm.Designer.cs",
               "DocumentMoniker": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SignUpForm.Designer.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\SignUpForm.Designer.cs",
@@ -102,33 +102,30 @@
               "RelativeToolTip": "LogisticaDepozit\\SignUpForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T06:28:48.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T06:28:48.126Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "LoginForm.Designer.cs",
               "DocumentMoniker": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\LoginForm.Designer.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\LoginForm.Designer.cs",
               "ToolTip": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\LoginForm.Designer.cs",
               "RelativeToolTip": "LogisticaDepozit\\LoginForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T06:28:42.097Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2025-04-01T06:28:42.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\LoginForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\LoginForm.cs",
               "ToolTip": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\LoginForm.cs [Design]",
               "RelativeToolTip": "LogisticaDepozit\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T05:37:36.43Z",
-              "EditorCaption": " [Design]"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-04-01T05:37:36.43Z"
             },
             {
               "$type": "Document",
@@ -167,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "SignUpForm.cs [Design]",
               "DocumentMoniker": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SignUpForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\SignUpForm.cs",
@@ -185,9 +182,8 @@
               "ToolTip": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\LoginForm.cs",
               "RelativeToolTip": "LogisticaDepozit\\LoginForm.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAgwCgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T05:37:46.423Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-04-01T05:37:46.423Z"
             },
             {
               "$type": "Document",
@@ -197,7 +193,7 @@
               "RelativeDocumentMoniker": "LogisticaDepozit\\MenuForm.cs",
               "ToolTip": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\MenuForm.cs",
               "RelativeToolTip": "LogisticaDepozit\\MenuForm.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADcAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAQwEMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T11:12:26.155Z",
               "EditorCaption": ""
@@ -285,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SettingsForm.cs [Design]",
               "DocumentMoniker": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SettingsForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\SettingsForm.cs",
@@ -296,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AddFundsForm.cs",
               "DocumentMoniker": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\AddFundsForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\AddFundsForm.cs",
@@ -304,32 +300,29 @@
               "RelativeToolTip": "LogisticaDepozit\\AddFundsForm.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T10:56:55.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T10:56:55.83Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AddFundsForm.cs [Design]",
               "DocumentMoniker": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\AddFundsForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\AddFundsForm.cs",
               "ToolTip": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\AddFundsForm.cs [Design]",
               "RelativeToolTip": "LogisticaDepozit\\AddFundsForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T10:54:11.108Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-31T10:54:11.108Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MenuForm.cs [Design]",
               "DocumentMoniker": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\MenuForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\MenuForm.cs",
               "ToolTip": "C:\\Apps\\II\\Proiect\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\MenuForm.cs [Design]",
               "RelativeToolTip": "LogisticaDepozit\\MenuForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T10:06:52.937Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-25T10:06:52.937Z"
             }
           ]
         }
