@@ -55,6 +55,7 @@ namespace LogisticaDepozit
                     if (c.TabIndex == 7)
                     {
                         c.Text = x.ToString()+" RON";
+                        menuPage.balance = Convert.ToInt32(x.ToString());
                     }
                 }
 

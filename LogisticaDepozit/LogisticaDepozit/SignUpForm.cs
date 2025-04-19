@@ -81,6 +81,22 @@ namespace LogisticaDepozit
             }
         }
 
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomePageForm signUpForm = Application.OpenForms["Form1"] as HomePageForm; // Get existing Form1
+            if (signUpForm != null)
+            {
+                signUpForm.Show(); // Show Form1 again
+                this.Hide(); // Hide Form2
+            }
+            else
+            {
+                signUpForm = new HomePageForm(); // Create a new Form1 if it doesn't exist
+                signUpForm.Show();
+                this.Hide(); // Hide Form2
+            }
+        }
+
         /*
                 private string HashPassword(string password)
                 {

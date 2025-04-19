@@ -38,3 +38,8 @@ C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\Log
 C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\Logistic.905EE311.Up2Date
 C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.exe
 C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.pdb
+C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\bin\Debug\AxInterop.WMPLib.dll
+C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\Interop.WMPLib.dll
+C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.csproj.ResolveComReference.cache
+C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\bin\Debug\Interop.WMPLib.dll
+C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\AxInterop.WMPLib.dll

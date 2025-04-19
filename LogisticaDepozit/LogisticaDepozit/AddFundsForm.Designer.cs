@@ -53,6 +53,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
             this.label1.Location = new System.Drawing.Point(40, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 16);
@@ -62,6 +63,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
             this.label2.Location = new System.Drawing.Point(40, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 16);
@@ -70,8 +72,9 @@
             // 
             // confirmTransactionButton
             // 
-            this.confirmTransactionButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.confirmTransactionButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
             this.confirmTransactionButton.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmTransactionButton.ForeColor = System.Drawing.Color.White;
             this.confirmTransactionButton.Location = new System.Drawing.Point(39, 148);
             this.confirmTransactionButton.Name = "confirmTransactionButton";
             this.confirmTransactionButton.Size = new System.Drawing.Size(193, 57);
@@ -84,6 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(276, 245);
             this.Controls.Add(this.confirmTransactionButton);
             this.Controls.Add(this.label2);

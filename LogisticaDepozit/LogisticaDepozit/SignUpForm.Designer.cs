@@ -55,6 +55,7 @@
             this.toolStrip1.Size = new System.Drawing.Size(457, 27);
             this.toolStrip1.TabIndex = 23;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
             // 
             // toolStripBackS
             // 
@@ -92,13 +93,15 @@
             // 
             // signUpButton
             // 
+            this.signUpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
+            this.signUpButton.ForeColor = System.Drawing.Color.White;
             this.signUpButton.Location = new System.Drawing.Point(30, 255);
             this.signUpButton.Margin = new System.Windows.Forms.Padding(4);
             this.signUpButton.Name = "signUpButton";
             this.signUpButton.Size = new System.Drawing.Size(392, 38);
             this.signUpButton.TabIndex = 20;
             this.signUpButton.Text = "Sign Up";
-            this.signUpButton.UseVisualStyleBackColor = true;
+            this.signUpButton.UseVisualStyleBackColor = false;
             this.signUpButton.Click += new System.EventHandler(this.signUpButtonClick);
             // 
             // label4
@@ -179,6 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(457, 316);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label5);
@@ -192,6 +196,7 @@
             this.Controls.Add(this.txtBox_PassS);
             this.Controls.Add(this.txtBox_ConfPassS);
             this.Controls.Add(this.txtBox_UserS);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
             this.Name = "SignUpForm";
             this.Text = "SignUpForm";
             this.toolStrip1.ResumeLayout(false);
