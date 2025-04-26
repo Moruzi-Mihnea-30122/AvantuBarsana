@@ -43,3 +43,29 @@ C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\Int
 C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.csproj.ResolveComReference.cache
 C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\bin\Debug\Interop.WMPLib.dll
 C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.csproj.AssemblyReference.cache
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\Interop.WMPLib.dll
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.csproj.ResolveComReference.cache
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.AddFundsForm.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.ChangeInfoForm.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.DeleteAccountForm.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.HomePageForm.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.LoginForm.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.MenuForm.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.Properties.Resources.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.SettingsForm.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.SignUpForm.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.csproj.GenerateResource.cache
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.csproj.CoreCompileInputs.cache
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.exe
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.pdb
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\bin\Debug\LogisticaDepozit.exe.config
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\bin\Debug\LogisticaDepozit.exe
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\bin\Debug\LogisticaDepozit.pdb
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\bin\Debug\EntityFramework.dll
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\bin\Debug\Interop.WMPLib.dll
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\bin\Debug\EntityFramework.xml
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\Logistic.905EE311.Up2Date
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.ProductStockForm.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.AddNewItemForm.resources

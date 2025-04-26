@@ -21,7 +21,7 @@ namespace LogisticaDepozit
             this.MaximumSize = new Size(this.Size.Width, this.Size.Height);
 
             this.FormClosed += Form3_FormClosed;
-            myCon.ConnectionString = @"data source=DESKTOP-OSUV1BO\SQLEXPRESS;initial catalog=LogisticDB;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework";
+            myCon.ConnectionString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False";
         }
 
         private void Form3_FormClosed(object sender, FormClosedEventArgs e)

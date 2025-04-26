@@ -33,7 +33,7 @@ namespace LogisticaDepozit
             this.overviewBalanceTextBox.Text = this.menuPage.balance.ToString() + " RON";
             this.overviewEmailTextBox.Text = this.menuPage.email.ToString();
 
-            this.overviewButton.Enabled = false;
+           // this.overviewButton.Enabled = false;
 
             this.defaultColor = this.menuPage.BackColor;
         }

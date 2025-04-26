@@ -52,7 +52,7 @@
             this.toolStripBackS});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(457, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(514, 29);
             this.toolStrip1.TabIndex = 23;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
@@ -63,16 +63,16 @@
             this.toolStripBackS.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBackS.Image")));
             this.toolStripBackS.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripBackS.Name = "toolStripBackS";
-            this.toolStripBackS.Size = new System.Drawing.Size(29, 24);
+            this.toolStripBackS.Size = new System.Drawing.Size(34, 24);
             this.toolStripBackS.Text = "toolStripButton1";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(259, 127);
+            this.label5.Location = new System.Drawing.Point(291, 159);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 16);
+            this.label5.Size = new System.Drawing.Size(42, 20);
             this.label5.TabIndex = 22;
             this.label5.Text = "Role";
             // 
@@ -85,20 +85,20 @@
             this.comboBox_Role.Items.AddRange(new object[] {
             "Manager",
             "Costumer"});
-            this.comboBox_Role.Location = new System.Drawing.Point(263, 147);
-            this.comboBox_Role.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox_Role.Location = new System.Drawing.Point(296, 184);
+            this.comboBox_Role.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox_Role.Name = "comboBox_Role";
-            this.comboBox_Role.Size = new System.Drawing.Size(160, 24);
+            this.comboBox_Role.Size = new System.Drawing.Size(180, 28);
             this.comboBox_Role.TabIndex = 21;
             // 
             // signUpButton
             // 
             this.signUpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
             this.signUpButton.ForeColor = System.Drawing.Color.White;
-            this.signUpButton.Location = new System.Drawing.Point(30, 255);
-            this.signUpButton.Margin = new System.Windows.Forms.Padding(4);
+            this.signUpButton.Location = new System.Drawing.Point(34, 319);
+            this.signUpButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.signUpButton.Name = "signUpButton";
-            this.signUpButton.Size = new System.Drawing.Size(392, 38);
+            this.signUpButton.Size = new System.Drawing.Size(441, 48);
             this.signUpButton.TabIndex = 20;
             this.signUpButton.Text = "Sign Up";
             this.signUpButton.UseVisualStyleBackColor = false;
@@ -107,83 +107,83 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 185);
+            this.label4.Location = new System.Drawing.Point(29, 231);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 16);
+            this.label4.Size = new System.Drawing.Size(137, 20);
             this.label4.TabIndex = 19;
             this.label4.Text = "Confirm Password";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 127);
+            this.label3.Location = new System.Drawing.Point(29, 159);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 16);
+            this.label3.Size = new System.Drawing.Size(78, 20);
             this.label3.TabIndex = 18;
             this.label3.Text = "Password";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(259, 61);
+            this.label2.Location = new System.Drawing.Point(291, 76);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 16);
+            this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 17;
             this.label2.Text = "E-mail";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 61);
+            this.label1.Location = new System.Drawing.Point(29, 76);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 16);
+            this.label1.Size = new System.Drawing.Size(83, 20);
             this.label1.TabIndex = 16;
             this.label1.Text = "Username";
             // 
             // txtBox_MailS
             // 
-            this.txtBox_MailS.Location = new System.Drawing.Point(263, 84);
-            this.txtBox_MailS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBox_MailS.Location = new System.Drawing.Point(296, 105);
+            this.txtBox_MailS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBox_MailS.Name = "txtBox_MailS";
-            this.txtBox_MailS.Size = new System.Drawing.Size(157, 22);
+            this.txtBox_MailS.Size = new System.Drawing.Size(176, 26);
             this.txtBox_MailS.TabIndex = 15;
             // 
             // txtBox_PassS
             // 
-            this.txtBox_PassS.Location = new System.Drawing.Point(30, 147);
-            this.txtBox_PassS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBox_PassS.Location = new System.Drawing.Point(34, 184);
+            this.txtBox_PassS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBox_PassS.Name = "txtBox_PassS";
-            this.txtBox_PassS.Size = new System.Drawing.Size(157, 22);
+            this.txtBox_PassS.Size = new System.Drawing.Size(176, 26);
             this.txtBox_PassS.TabIndex = 14;
             this.txtBox_PassS.UseSystemPasswordChar = true;
             // 
             // txtBox_ConfPassS
             // 
-            this.txtBox_ConfPassS.Location = new System.Drawing.Point(30, 205);
-            this.txtBox_ConfPassS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBox_ConfPassS.Location = new System.Drawing.Point(34, 256);
+            this.txtBox_ConfPassS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBox_ConfPassS.Name = "txtBox_ConfPassS";
-            this.txtBox_ConfPassS.Size = new System.Drawing.Size(157, 22);
+            this.txtBox_ConfPassS.Size = new System.Drawing.Size(176, 26);
             this.txtBox_ConfPassS.TabIndex = 13;
             this.txtBox_ConfPassS.UseSystemPasswordChar = true;
             // 
             // txtBox_UserS
             // 
-            this.txtBox_UserS.Location = new System.Drawing.Point(30, 84);
-            this.txtBox_UserS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBox_UserS.Location = new System.Drawing.Point(34, 105);
+            this.txtBox_UserS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBox_UserS.Name = "txtBox_UserS";
-            this.txtBox_UserS.Size = new System.Drawing.Size(157, 22);
+            this.txtBox_UserS.Size = new System.Drawing.Size(176, 26);
             this.txtBox_UserS.TabIndex = 12;
             // 
             // SignUpForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
-            this.ClientSize = new System.Drawing.Size(457, 316);
+            this.ClientSize = new System.Drawing.Size(514, 395);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox_Role);
@@ -197,6 +197,7 @@
             this.Controls.Add(this.txtBox_ConfPassS);
             this.Controls.Add(this.txtBox_UserS);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "SignUpForm";
             this.Text = "SignUpForm";
             this.toolStrip1.ResumeLayout(false);

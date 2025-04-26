@@ -21,6 +21,7 @@ namespace LogisticaDepozit
         private SqlConnection myCon = new SqlConnection();
         private DataSet dsUsers;
         private AddFundsForm addBalancePage;
+        private ProductStockForm productStock;
 
         // accesibile de catre orice clasa din proiectul curent
 
@@ -36,7 +37,7 @@ namespace LogisticaDepozit
             this.loginPage = form;
             InitializeComponent();
 
-            myCon.ConnectionString = @"data source=DESKTOP-OSUV1BO\SQLEXPRESS;initial catalog=LogisticDB;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework";
+            myCon.ConnectionString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
 
             this.MinimumSize = new Size(this.Size.Width, this.Size.Height);
             this.MaximumSize = new Size(this.Size.Width, this.Size.Height);
@@ -110,7 +111,9 @@ namespace LogisticaDepozit
 
         private void productStockClicked(object sender, EventArgs e)
         {
-
+            this.Hide();
+            productStock = new ProductStockForm(balance, this);
+            productStock.Show();
         }
 
         private void logOutClicked(object sender, EventArgs e)

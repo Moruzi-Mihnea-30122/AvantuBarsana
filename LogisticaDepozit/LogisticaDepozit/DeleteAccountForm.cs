@@ -50,7 +50,7 @@ namespace LogisticaDepozit
         {
             if (passwordTextBox.Text == this.menuPage.password)
             {
-                myCon.ConnectionString = @"data source=DESKTOP-OSUV1BO\SQLEXPRESS;initial catalog=LogisticDB;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework";
+                myCon.ConnectionString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
                 myCon.Open();
 
                 SqlCommand command = new SqlCommand("DELETE FROM Users\nWHERE Username LIKE '" + menuPage.username + "';", myCon);
