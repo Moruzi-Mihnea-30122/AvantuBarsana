@@ -16,7 +16,7 @@ namespace LogisticaDepozit
 {
     public partial class MenuForm: Form
     {
-        private LoginForm loginPage;
+        internal LoginForm loginPage;
         private SettingsForm settingsPage;
         private SqlConnection myCon = new SqlConnection();
         private DataSet dsUsers;

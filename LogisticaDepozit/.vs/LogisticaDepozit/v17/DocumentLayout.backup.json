@@ -7,16 +7,23 @@
       "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\productstockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|c:\\users\\modan\\documents\\facultate stuff\\an3s2\\avantubarsana\\logisticadepozit\\logisticadepozit\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_QUDR49C/LogisticDB/True/SqlTable/dbo.Products.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|c:\\users\\modan\\documents\\facultate stuff\\an3s2\\avantubarsana\\logisticadepozit\\logisticadepozit\\productstockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\productstockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|c:\\users\\modan\\documents\\facultate stuff\\an3s2\\avantubarsana\\logisticadepozit\\logisticadepozit\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|c:\\users\\modan\\documents\\facultate stuff\\an3s2\\avantubarsana\\logisticadepozit\\logisticadepozit\\addnewitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\addnewitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|c:\\users\\modan\\documents\\facultate stuff\\an3s2\\avantubarsana\\logisticadepozit\\logisticadepozit\\productstockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\productstockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|c:\\users\\modan\\documents\\facultate stuff\\an3s2\\avantubarsana\\logisticadepozit\\logisticadepozit\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|c:\\users\\modan\\documents\\facultate stuff\\an3s2\\avantubarsana\\logisticadepozit\\logisticadepozit\\addnewitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,11 +101,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "MenuForm.cs",
+              "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\MenuForm.cs",
+              "RelativeDocumentMoniker": "LogisticaDepozit\\MenuForm.cs",
+              "ToolTip": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\MenuForm.cs*",
+              "RelativeToolTip": "LogisticaDepozit\\MenuForm.cs*",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAwwBIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T14:39:36.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.Products [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_QUDR49C/LogisticDB/True/SqlTable/dbo.Products.sql",
+              "ToolTip": "dbo.Products [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-04-26T14:24:01.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ProductStockForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ProductStockForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\ProductStockForm.cs",
@@ -116,14 +146,14 @@
               "RelativeDocumentMoniker": "LogisticaDepozit\\ProductStockForm.cs",
               "ToolTip": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ProductStockForm.cs*",
               "RelativeToolTip": "LogisticaDepozit\\ProductStockForm.cs*",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAiwL4AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAAAQwMkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-25T13:19:11.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AddNewItemForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\AddNewItemForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\AddNewItemForm.cs",
@@ -135,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "SignUpForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SignUpForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\SignUpForm.cs",
@@ -147,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AddNewItemForm.cs",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\AddNewItemForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\AddNewItemForm.cs",
@@ -160,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "SignUpForm.cs",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SignUpForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\SignUpForm.cs",
@@ -173,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ProductStockForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ProductStockForm.Designer.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\ProductStockForm.Designer.cs",
@@ -186,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "AddFundsForm.cs",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\AddFundsForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\AddFundsForm.cs",
@@ -199,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "HomePageForm.cs",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\HomePageForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\HomePageForm.cs",
@@ -211,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ChangeInfoForm.cs",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ChangeInfoForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\ChangeInfoForm.cs",
@@ -223,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "DeleteAccountForm.cs",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\DeleteAccountForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\DeleteAccountForm.cs",
@@ -235,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "SettingsForm.cs",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SettingsForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\SettingsForm.cs",
@@ -247,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "SettingsForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SettingsForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\SettingsForm.cs",
@@ -258,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "LogisticaDepozit\\Properties\\Resources.resx",
@@ -271,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\LoginForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\LoginForm.cs",
@@ -282,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "HomePageForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\HomePageForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\HomePageForm.cs",
@@ -293,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "DeleteAccountForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\DeleteAccountForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\DeleteAccountForm.cs",
@@ -304,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "ChangeInfoForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ChangeInfoForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\ChangeInfoForm.cs",
@@ -315,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "LogisticDM.edmx [Diagram1]",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\LogisticDM.edmx",
               "RelativeDocumentMoniker": "LogisticaDepozit\\LogisticDM.edmx",
@@ -326,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "HomePageForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\HomePageForm.Designer.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\HomePageForm.Designer.cs",
@@ -338,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "LoginForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\modan\\Documents\\Facultate stuff\\An3S2\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\LoginForm.Designer.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\LoginForm.Designer.cs",
