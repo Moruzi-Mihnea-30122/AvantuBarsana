@@ -22,6 +22,7 @@ namespace LogisticaDepozit
         private DataSet dsUsers;
         private AddFundsForm addBalancePage;
         private ProductStockForm productStock;
+        private ShopForm shopForm;
 
         // accesibile de catre orice clasa din proiectul curent
 
@@ -32,7 +33,7 @@ namespace LogisticaDepozit
         internal double balance;
         internal int cartId;
         
-        public MenuForm(LoginForm form)
+        public MenuForm(LoginForm form, double balance)
         {
             this.loginPage = form;
             InitializeComponent();
@@ -64,7 +65,10 @@ namespace LogisticaDepozit
                     this.password = reader.GetString(1);
                     this.email = reader.GetString(2);
                     this.role = reader.GetString(3);
-                    this.balance = Convert.ToDouble(reader.GetString(4));
+                    
+                    
+                        this.balance = Convert.ToDouble(reader.GetString(4));
+                    
                     if (!reader.IsDBNull(5))
                     {
                         this.cartId = Convert.ToInt32(reader.GetString(5));
@@ -74,6 +78,7 @@ namespace LogisticaDepozit
                 if (this.role != "Manager")
                 {
                     this.Controls.Remove(productStockButton);
+                    this.Controls.Remove(orderManagerButton);
                 }
 
                 this.balanceTextBox.Text = this.balance.ToString() + " RON";
@@ -95,12 +100,16 @@ namespace LogisticaDepozit
 
         private void startShoppingClicked(object sender, EventArgs e)
         {
-
+            shopForm = new ShopForm(balance, this);
+            shopForm.Show();
+            this.Hide();
         }
 
         private void shoppingCartClicked(object sender, EventArgs e)
         {
-
+            ViewOrders viewOrdersForm = new ViewOrders(this);
+            viewOrdersForm.Show();
+            this.Hide();
         }
 
         private void addBalanceClicked(object sender, EventArgs e)
@@ -142,5 +151,11 @@ namespace LogisticaDepozit
             loginPage.Show();
         }
 
+        private void orderManagerButton_Click(object sender, EventArgs e)
+        {
+            OrderManagerForm orderForm = new OrderManagerForm(this, balance);
+            orderForm.Show();
+            this.Hide();
+        }
     }
 }

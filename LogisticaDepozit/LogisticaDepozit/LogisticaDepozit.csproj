@@ -135,6 +135,12 @@
     <Compile Include="Order.cs">
       <DependentUpon>LogisticDM.tt</DependentUpon>
     </Compile>
+    <Compile Include="OrderManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderManagerForm.Designer.cs">
+      <DependentUpon>OrderManagerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs">
       <DependentUpon>LogisticDM.tt</DependentUpon>
     </Compile>
@@ -157,6 +163,12 @@
     <Compile Include="SettingsForm.Designer.cs">
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopForm.Designer.cs">
+      <DependentUpon>ShopForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +177,12 @@
     </Compile>
     <Compile Include="User.cs">
       <DependentUpon>LogisticDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewOrders.Designer.cs">
+      <DependentUpon>ViewOrders.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddFundsForm.resx">
       <DependentUpon>AddFundsForm.cs</DependentUpon>
@@ -187,6 +205,9 @@
     <EmbeddedResource Include="MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrderManagerForm.resx">
+      <DependentUpon>OrderManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProductStockForm.resx">
       <DependentUpon>ProductStockForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,8 +219,14 @@
     <EmbeddedResource Include="SettingsForm.resx">
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShopForm.resx">
+      <DependentUpon>ShopForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewOrders.resx">
+      <DependentUpon>ViewOrders.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="LogisticDM.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

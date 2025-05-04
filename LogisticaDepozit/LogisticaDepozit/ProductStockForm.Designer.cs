@@ -131,7 +131,7 @@
             this.labelOrderTotal.AutoSize = true;
             this.labelOrderTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelOrderTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.labelOrderTotal.Location = new System.Drawing.Point(534, 434);
+            this.labelOrderTotal.Location = new System.Drawing.Point(544, 428);
             this.labelOrderTotal.Name = "labelOrderTotal";
             this.labelOrderTotal.Size = new System.Drawing.Size(115, 25);
             this.labelOrderTotal.TabIndex = 15;
@@ -139,7 +139,7 @@
             // 
             // textBoxTotalPrice
             // 
-            this.textBoxTotalPrice.Location = new System.Drawing.Point(549, 463);
+            this.textBoxTotalPrice.Location = new System.Drawing.Point(559, 457);
             this.textBoxTotalPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxTotalPrice.Name = "textBoxTotalPrice";
             this.textBoxTotalPrice.ReadOnly = true;
@@ -152,7 +152,7 @@
             this.buttonPlaceOreder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
             this.buttonPlaceOreder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPlaceOreder.ForeColor = System.Drawing.Color.White;
-            this.buttonPlaceOreder.Location = new System.Drawing.Point(199, 511);
+            this.buttonPlaceOreder.Location = new System.Drawing.Point(209, 505);
             this.buttonPlaceOreder.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonPlaceOreder.Name = "buttonPlaceOreder";
             this.buttonPlaceOreder.Size = new System.Drawing.Size(206, 47);

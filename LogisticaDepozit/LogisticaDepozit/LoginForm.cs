@@ -36,7 +36,7 @@ namespace LogisticaDepozit
             }
             else
             {
-                MenuForm meniu = new MenuForm(this);
+                MenuForm meniu = new MenuForm(this,0);
                 meniu.Show();
                 this.Hide();
             }
