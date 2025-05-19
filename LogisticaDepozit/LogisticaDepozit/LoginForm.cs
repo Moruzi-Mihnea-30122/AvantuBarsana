@@ -13,9 +13,10 @@ namespace LogisticaDepozit
 {
     public partial class LoginForm: Form
     {
-        SqlConnection myCon = new SqlConnection();
+        internal SqlConnection myCon = new SqlConnection();
         public LoginForm()
         {
+            myCon.ConnectionString = HomePageForm.connString;
             InitializeComponent();
             this.MinimumSize = new Size(this.Size.Width, this.Size.Height);
             this.MaximumSize = new Size(this.Size.Width, this.Size.Height);
@@ -24,7 +25,7 @@ namespace LogisticaDepozit
 
         private void loginButtonClick(object sender, EventArgs e)
         {
-            myCon.ConnectionString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+            
             myCon.Open();
 
             SqlCommand command = new SqlCommand("SELECT Username, Password\nFROM Users\nWHERE Username LIKE '" + usernameLoginTextBox.Text + "' AND Password LIKE '" + passwordLoginTextBox.Text + "';", myCon);
@@ -36,12 +37,13 @@ namespace LogisticaDepozit
             }
             else
             {
-                MenuForm meniu = new MenuForm(this,0);
+                MenuForm meniu = new MenuForm(this,0,null);
                 meniu.Show();
                 this.Hide();
             }
 
             myCon.Close();
+            reader.Close();
             
         }
 

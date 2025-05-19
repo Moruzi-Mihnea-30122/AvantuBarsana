@@ -31,29 +31,33 @@ namespace LogisticaDepozit
         internal string password;
         internal string email;
         internal double balance;
-        internal int cartId;
+        internal string userID;
         
-        public MenuForm(LoginForm form, double balance)
+        public MenuForm(LoginForm form, double balance, string username)
         {
             this.loginPage = form;
+            this.username = username;
             InitializeComponent();
 
-            myCon.ConnectionString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+            myCon.ConnectionString = HomePageForm.connString;
 
             this.MinimumSize = new Size(this.Size.Width, this.Size.Height);
             this.MaximumSize = new Size(this.Size.Width, this.Size.Height);
 
             try
             {
-                foreach (Control c in this.loginPage.Controls)
+                if (this.username == null)
                 {
-                    if (c is TextBox && c.TabIndex == 6)
+                    foreach (Control c in this.loginPage.Controls)
                     {
-                        this.username = c.Text;
+                        if (c is TextBox && c.TabIndex == 6)
+                        {
+                            this.username = c.Text;
+                        }
                     }
                 }
 
-                usernameLabel.Text = username.ToString();
+                usernameLabel.Text = this.username.ToString();
 
                 myCon.Open();
 
@@ -65,14 +69,10 @@ namespace LogisticaDepozit
                     this.password = reader.GetString(1);
                     this.email = reader.GetString(2);
                     this.role = reader.GetString(3);
+                    this.userID = reader.GetString(0);
                     
                     
                         this.balance = Convert.ToDouble(reader.GetString(4));
-                    
-                    if (!reader.IsDBNull(5))
-                    {
-                        this.cartId = Convert.ToInt32(reader.GetString(5));
-                    }
                 }
 
                 if (this.role != "Manager")
@@ -82,13 +82,12 @@ namespace LogisticaDepozit
                 }
 
                 this.balanceTextBox.Text = this.balance.ToString() + " RON";
-
+                reader.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: "+ex);
             }
-
             myCon.Close();
         }
 
@@ -132,7 +131,7 @@ namespace LogisticaDepozit
             password = null;
             email = null;
             balance = 0;
-            cartId = 0;
+            userID = null;
             loginPage.Show();
 
             foreach (Control c in this.loginPage.Controls)

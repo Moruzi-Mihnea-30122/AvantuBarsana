@@ -10,11 +10,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AxWMPLib;
 using WMPLib;
+using System.Data.SqlClient;
 
 namespace LogisticaDepozit
 {
     public partial class HomePageForm : Form
     {
+        //DE MODIFICAT STRING-UL DOAR AICI
+        internal static string connString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+        internal SqlConnection myCon = new SqlConnection(connectionString: connString);
+
         internal Timer timer;
         public HomePageForm()
         {
@@ -63,6 +68,11 @@ namespace LogisticaDepozit
         }
 
         private void HomePageForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

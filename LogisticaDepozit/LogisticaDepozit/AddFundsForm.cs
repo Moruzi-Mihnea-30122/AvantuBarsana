@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -31,12 +32,12 @@ namespace LogisticaDepozit
         {
             if(Convert.ToInt32(enterSumTextBox.Text) != 0 && cardNumberTextBox.Text.Length == cardNumberTextBox.MaxLength)
             {
-                myCon.ConnectionString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+                myCon.ConnectionString = HomePageForm.connString;
                 myCon.Open();
 
                 double x = Convert.ToDouble(enterSumTextBox.Text) + menuPage.balance;
 
-                SqlCommand command = new SqlCommand("UPDATE Users\nSET Balance = " + x +"\nWHERE Username LIKE '" + menuPage.username +"';",myCon);
+                SqlCommand command = new SqlCommand("UPDATE Users\nSET Balance = " + x +"\nWHERE UserID LIKE '" + menuPage.userID +"';",myCon);
                 command.ExecuteNonQuery();
 
                 if (this.settingsPage != null)

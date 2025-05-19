@@ -23,7 +23,7 @@ namespace LogisticaDepozit
             this.menuPage = menuPage;
             this.productStockForm = productStockForm;
             this.lastIndex = productStockForm.lastIndex;
-            myCon.ConnectionString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+            myCon.ConnectionString = HomePageForm.connString;
             InitializeComponent();
         }
 
@@ -37,7 +37,7 @@ namespace LogisticaDepozit
                 cmd.Parameters.AddWithValue("@name", textBox_name.Text);
                 cmd.Parameters.AddWithValue("@price", textBox_price.Text);
                 cmd.Parameters.AddWithValue("@qty", "0");
-                SqlDataReader rdr = cmd.ExecuteReader();
+                cmd.ExecuteNonQuery();
                 myCon.Close();
 
                 this.Hide();

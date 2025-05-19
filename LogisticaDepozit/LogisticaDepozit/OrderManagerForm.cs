@@ -62,13 +62,13 @@ namespace LogisticaDepozit
 
                 balance += nprice;
                 textBoxTotalPrice.Text = balance.ToString() + " RON";
-                SqlCommand cmd1 = new SqlCommand("UPDATE Users\n SET Balance = " + balance.ToString() + "WHERE Username LIKE '" + menuPage.username + "';", myCon);
+                SqlCommand cmd1 = new SqlCommand("UPDATE Users\n SET Balance = " + balance.ToString() + "WHERE UserID LIKE '" + menuPage.userID + "';", myCon);
                 cmd1.ExecuteNonQuery();
                 //SqlCommand cmd2 = new SqlCommand("DELETE FROM Orders WHERE OrderID LIKE '" + orderNumber + "';", myCon);
                 //cmd2.ExecuteNonQuery();
                 cmd1 = new SqlCommand("Update Orders\n Set Status = 'Accepted' WHERE OrderID LIKE '" + orderNumber + "';", myCon);
                 cmd1.ExecuteNonQuery();
-                cmd1 = new SqlCommand("Update Users\n Set Balance = " + balance.ToString() + "WHERE username LIKE '" + menuPage.username + "';", myCon);
+                cmd1 = new SqlCommand("Update Users\n Set Balance = " + balance.ToString() + "WHERE userID LIKE '" + menuPage.userID + "';", myCon);
                 cmd1.ExecuteNonQuery();
 
                 Label acceptLabel = new Label();
@@ -109,14 +109,18 @@ namespace LogisticaDepozit
                 myCon.Open();
                 SqlCommand cmd1 = new SqlCommand("Update Orders\n Set Status = 'Declined' WHERE OrderID LIKE '" + orderNumber + "';", myCon);
                 cmd1.ExecuteNonQuery();
-                cmd1 = new SqlCommand("SELECT * FROM Users WHERE username LIKE '" + userID + "';", myCon);
+                cmd1 = new SqlCommand("SELECT * FROM Users WHERE UserID LIKE '" + userID + "';", myCon);
                 SqlDataReader reader = cmd1.ExecuteReader();
                 if (reader.Read())
                 {
-                    SqlCommand cmd2  = new SqlCommand("Update Users\nSet Balance = " + (Convert.ToDouble(reader.GetString(4))+Convert.ToDouble(totalPrice)).ToString() + " WHERE username LIKE '" + userID + "';", myCon);
+                    SqlConnection myCon2 = new SqlConnection(connectionString: HomePageForm.connString);
+                    myCon2.Open();
+                    SqlCommand cmd2  = new SqlCommand("Update Users\nSet Balance = " + (Convert.ToDouble(reader.GetString(4))+Convert.ToDouble(totalPrice)).ToString() + " WHERE UserID LIKE '" + userID + "';", myCon2);
                     cmd2.ExecuteNonQuery();
+                    myCon2.Close();
                 }
                 myCon.Close();
+                reader.Close();
 
             };
             panelOrders.Controls.Add(declineButton);
@@ -127,7 +131,7 @@ namespace LogisticaDepozit
         private void toolStripBackS_Click(object sender, EventArgs e)
         {
             this.Close();
-            MenuForm menuPage1 = new MenuForm(logInForm, balance);
+            MenuForm menuPage1 = new MenuForm(logInForm, balance, null);
             menuPage1.Show();
         }
 
@@ -136,7 +140,7 @@ namespace LogisticaDepozit
             this.logInForm = menuPage.loginPage;
             this.menuPage = menuPage;
             this.balance = balance;
-            myCon.ConnectionString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;MultipleActiveResultSets=True;";
+            myCon.ConnectionString = HomePageForm.connString;
             
             panel = new Panel();
             panel.Size = new Size(630, 300);
@@ -149,10 +153,10 @@ namespace LogisticaDepozit
             int count = 0;
             while (reader.Read())
             {
-                if (reader.GetString(5) == "Processing")
+                if (reader.GetString(2) == "Processing")
                 {
                     count++;
-                    insertProductListed(reader.GetString(0), reader.GetString(1), reader.GetString(6), panel);
+                    insertProductListed(reader.GetString(0), reader.GetString(1), reader.GetString(3), panel);
                 }
             }
             if(count == 0)
@@ -172,6 +176,7 @@ namespace LogisticaDepozit
             textBoxTotalPrice.ReadOnly = true;
             this.Controls.Add(textBoxTotalPrice);
             myCon.Close();
+            reader.Close();
 
 
 

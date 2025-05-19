@@ -27,9 +27,8 @@ namespace LogisticaDepozit
         internal string password;
         internal string email;
         internal double balance;
-        internal int cartId;
 
-        private int[] prodIDs = new int[20];
+        private List<string> cartIds = new List<string>();
         private int lastX = 13; // tinem minte pozitia pe x initiala (pt coloana) - se modifica in functie de preferinte
         private int lastY = 33; // tinem minte pozitia pe y initiala (pt linie)
         private Panel panel; // asta e panel-ul in care o sa apara toate elementele din baza de date
@@ -76,6 +75,17 @@ namespace LogisticaDepozit
                 {
                     textBox.Text = (Convert.ToInt32(textBox.Text) - 1).ToString();
                     textBoxTotalPrice.Text = (Convert.ToDouble(textBoxTotalPrice.Text) - nprice).ToString();
+                    if (Convert.ToInt32(textBox.Text) == 0)
+                    {
+                        myCon.Open();
+                        SqlCommand cmd = new SqlCommand("Select ProductID FROM Products WHERE Name LIKE '" + productName + "';", myCon);
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        reader.Read();
+                        MessageBox.Show(reader.GetString(0));
+                        cartIds.Remove(reader.GetString(0));
+                        myCon.Close();
+                        reader.Close();
+                    }
                 }
                 else
                     MessageBox.Show("Quantity can't be negative");
@@ -106,7 +116,13 @@ namespace LogisticaDepozit
                 {
                     textBox.Text = (Convert.ToInt32(textBox.Text) + 1).ToString();
                     textBoxTotalPrice.Text = (Convert.ToDouble(textBoxTotalPrice.Text) + nprice).ToString();
-                    prodIDs[(lastY - 33) / 35] = 1; 
+                    myCon.Open();
+                    SqlCommand cmd = new SqlCommand("Select ProductID FROM Products WHERE Name LIKE '" + productName + "';", myCon);
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+                    cartIds.Add(reader.GetString(0));
+                    myCon.Close();
+                    reader.Close();
                 }
                 else
                 {
@@ -129,7 +145,7 @@ namespace LogisticaDepozit
             this.buttonPlaceOreder = new Button();
 
             //DE SCHIMBAT STRING-UL IN FUNCTIE DE PC
-            myCon.ConnectionString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;MultipleActiveResultSets=True;";
+            myCon.ConnectionString = HomePageForm.connString;
 
             this.MinimumSize = new Size(this.Size.Width, this.Size.Height);
 
@@ -159,6 +175,7 @@ namespace LogisticaDepozit
                 insertProductListed(reader.GetString(1), reader.GetString(3), reader.GetString(2), panel);
             }
             myCon.Close();
+            reader.Close();
             InitializeComponent();
         }
         //
@@ -183,7 +200,7 @@ namespace LogisticaDepozit
                 SqlConnection myCon2 = new SqlConnection(myCon.ConnectionString); // Avem nevoie de 2 conexiuni deoarece apelam BD simultan de 2 ori (in while)
                 myCon2.Open();
                 myCon.Open();
-                string query = "UPDATE Users\n Set Balance = " + this.balance.ToString() + "\nWHERE Username LIKE '" + menuPage.username + "';";
+                string query = "UPDATE Users\n Set Balance = " + this.balance.ToString() + "\nWHERE UserID LIKE '" + menuPage.userID + "';";
                 SqlCommand cmd3 = new SqlCommand(query, myCon);
                 cmd3.ExecuteNonQuery();
                 SqlCommand cmd1 = new SqlCommand("SELECT Qty FROM Products", myCon);
@@ -196,30 +213,46 @@ namespace LogisticaDepozit
                     panelIndex += 4; // Asta este pasul la care se gasesc prin Controale textBox-urile  ce ne trebe
                     productIndex++;
                 }
-                myCon2.Close();
-                //TO DO -> de modificat BD astfel incat legatura dintre orders sa fie cu users, nu cu products FK_ID_UserID?
-                SqlCommand cmd4 = new SqlCommand("SELECT * FROM Orders",myCon);
-                SqlDataReader reader2 = cmd4.ExecuteReader();
+                reader1.Close();
+                
+                SqlCommand cmd4 = new SqlCommand("SELECT * FROM Orders",myCon2);
+                SqlDataReader reader3;
+                reader3 = cmd4.ExecuteReader();
                 int lastIndex = 0;
-                while(reader2.Read())
-                    lastIndex = Convert.ToInt32(reader2.GetString(0));
+                while(reader3.Read())
+                    lastIndex = Convert.ToInt32(reader3.GetString(0));
+                reader3.Close();
                 Random rnd = new Random();
                 int norderNo = rnd.Next(10000,100000);
                 string orderNo = norderNo.ToString();
-                string id = username;
+                string id = menuPage.userID;
                 string totalprice = textBoxTotalPrice.Text;
                 
-                SqlCommand cmd5 = new SqlCommand("INSERT INTO Orders(OrderID, ID, ProductID, Qty, Price, Status, TotalPrice) VALUES (@orderID, @ID, @productID, @qty, @price, @status, @totalPrice)", myCon);
+                SqlCommand cmd5 = new SqlCommand("INSERT INTO Orders(OrderID, userID, Status, TotalPrice, PlacedData) VALUES (@orderID, @userID, @status, @totalPrice, @placedData)", myCon2);
                 cmd5.Parameters.AddWithValue("@orderID", orderNo);
-                cmd5.Parameters.AddWithValue("@ID", id);
-                cmd5.Parameters.AddWithValue("@productID", "1");
-                cmd5.Parameters.AddWithValue("@qty", "nan");
-                cmd5.Parameters.AddWithValue("@price", "nan");
+                cmd5.Parameters.AddWithValue("@userID", id);
                 cmd5.Parameters.AddWithValue("@status", "Processing");
                 cmd5.Parameters.AddWithValue("@totalPrice", totalprice);
+                cmd5.Parameters.AddWithValue("@placedData", DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss"));
                 cmd5.ExecuteNonQuery();
 
+                cmd5 = new SqlCommand("SELECT ID FROM ProductOrder",myCon);
+                SqlDataReader reader4 = cmd5.ExecuteReader();
+                int lastIndex2 = 0;
+                while(reader4.Read())
+                    lastIndex2 = Convert.ToInt32(reader4.GetString(0));
+                reader4.Close();
+                foreach (string prodID in cartIds)
+                {
+                    lastIndex2++;
+                    SqlCommand cmd6 = new SqlCommand("INSERT INTO ProductOrder(ID, OrderID, ProductID) VALUES (@ID, @orderID, @productID)", myCon2);
+                    cmd6.Parameters.AddWithValue("@ID", lastIndex2.ToString());
+                    cmd6.Parameters.AddWithValue("@orderID", orderNo);
+                    cmd6.Parameters.AddWithValue("@productID", prodID);
+                    cmd6.ExecuteNonQuery();
+                }
                 myCon.Close();
+                myCon2.Close();
 
                 MessageBox.Show("Order places succesfully\nAn operator will confirm your order shortly");
                 //
@@ -241,7 +274,7 @@ namespace LogisticaDepozit
         private void toolStripBackS_Click_1(object sender, EventArgs e)
         {
             this.Close();
-            MenuForm menuPage1 = new MenuForm(logInForm, balance);
+            MenuForm menuPage1 = new MenuForm(logInForm, balance, null);
             //menuPage1.balance = this.balance;
             menuPage1.Show();
         }

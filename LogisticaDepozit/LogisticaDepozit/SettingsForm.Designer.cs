@@ -176,6 +176,7 @@
             this.Text = "Settings";
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SettingsFormClosing);
 
         }
 

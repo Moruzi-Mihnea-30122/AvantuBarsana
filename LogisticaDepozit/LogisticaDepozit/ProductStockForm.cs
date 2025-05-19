@@ -125,7 +125,7 @@ namespace LogisticaDepozit
             this.buttonPlaceOreder = new Button();
             
             //DE SCHIMBAT STRING-UL IN FUNCTIE DE PC
-            myCon.ConnectionString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+            myCon.ConnectionString = HomePageForm.connString;
 
             this.MinimumSize = new Size(this.Size.Width, this.Size.Height);
             
@@ -173,6 +173,7 @@ namespace LogisticaDepozit
             lastY += 35;
 
             myCon.Close();
+            reader.Close();
             InitializeComponent();
         }
         //
@@ -197,7 +198,7 @@ namespace LogisticaDepozit
                 SqlConnection myCon2 = new SqlConnection(myCon.ConnectionString); // Avem nevoie de 2 conexiuni deoarece apelam BD simultan de 2 ori (in while)
                 myCon2.Open();
                 myCon.Open();
-                string query = "UPDATE Users\n Set Balance = " + this.balance.ToString() + "\nWHERE Username LIKE '" + menuPage.username + "';";
+                string query = "UPDATE Users\n Set Balance = " + this.balance.ToString() + "\nWHERE UserID LIKE '" + menuPage.userID + "';";
                 SqlCommand cmd3 = new SqlCommand(query, myCon);
                 cmd3.ExecuteNonQuery();
                 SqlCommand cmd1 = new SqlCommand("SELECT Qty FROM Products", myCon);
@@ -210,6 +211,7 @@ namespace LogisticaDepozit
                     panelIndex += 4; // Asta este pasul la care se gasesc prin Controale textBox-urile  ce ne trebe
                     productIndex++;
                 }
+                reader1.Close();
                 myCon2.Close();
                 myCon.Close();
 
@@ -234,7 +236,7 @@ namespace LogisticaDepozit
         private void toolStripBackS_Click(object sender, EventArgs e)
         {
             this.Close();
-            MenuForm menuPage1 = new MenuForm(logInForm,balance);
+            MenuForm menuPage1 = new MenuForm(logInForm,balance, null);
             //menuPage1.balance = this.balance;
             menuPage1.Show();
         }

@@ -72,3 +72,4 @@ C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\Lo
 C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.OrderManagerForm.resources
 C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.ShopForm.resources
 C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.ViewOrders.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.OrderDetailsForm.resources

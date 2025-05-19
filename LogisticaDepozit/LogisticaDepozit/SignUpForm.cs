@@ -21,7 +21,7 @@ namespace LogisticaDepozit
             this.MaximumSize = new Size(this.Size.Width, this.Size.Height);
 
             this.FormClosed += Form3_FormClosed;
-            myCon.ConnectionString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False";
+            myCon.ConnectionString = HomePageForm.connString;
         }
 
         private void Form3_FormClosed(object sender, FormClosedEventArgs e)
@@ -37,7 +37,7 @@ namespace LogisticaDepozit
 
         private void signUpButtonClick(object sender, EventArgs e)
         {
-            if (txtBox_UserS.Text == "" || txtBox_MailS.Text == "" || txtBox_PassS.Text == "" || txtBox_ConfPassS.Text == "" || comboBox_Role.Text == "")
+            if (txtBox_UserS.Text == "" || txtBox_MailS.Text == "" || txtBox_PassS.Text == "" || txtBox_ConfPassS.Text == "" )
             {
                 MessageBox.Show("Completați toate câmpurile!");
                 return;
@@ -60,20 +60,29 @@ namespace LogisticaDepozit
                 //string hashedPassword = HashPassword(txtBox_PassS.Text);
 
                 myCon.Open();
-                string query = "INSERT INTO Users (Username, Password, Email, Role, Balance, CartID) VALUES (@username, @password, @email, @role, @balance, @cartid)";
+
+                SqlCommand cmd1 = new SqlCommand("Select * FROM Users", myCon);
+                SqlDataReader reader1 = cmd1.ExecuteReader();
+                string role = "Manager";
+                if (reader1.Read()) { role = "Customer"; }
+                reader1.Close();
+
+                string query = "INSERT INTO Users (UserID, Password, Email, Role, Balance, Username) VALUES (@userID, @password, @email, @role, @balance, @username)";
                 SqlCommand cmd = new SqlCommand(query, myCon);
+                cmd.Parameters.AddWithValue("@userID", txtBox_UserS.Text);
                 cmd.Parameters.AddWithValue("@username", txtBox_UserS.Text);
                 cmd.Parameters.AddWithValue("@password", txtBox_PassS.Text);
                 cmd.Parameters.AddWithValue("@email", txtBox_MailS.Text);
-                cmd.Parameters.AddWithValue("@role", comboBox_Role.Text);
-                cmd.Parameters.AddWithValue("@balance", comboBox_Role.Text == "Manager" ? 1000000 : 0);
-                cmd.Parameters.AddWithValue("@cartid", DBNull.Value); // Sau setează un ID valid
+                cmd.Parameters.AddWithValue("@role", role);
+                cmd.Parameters.AddWithValue("@balance", role == "Manager" ? 1000000 : 0);
 
                 cmd.ExecuteNonQuery();
                 myCon.Close();
 
                 MessageBox.Show("Cont creat cu succes!");
                 this.Hide();
+                LoginForm loginFrom = new LoginForm();
+                loginFrom.Show();
             }
             catch (Exception ex)
             {

@@ -50,10 +50,10 @@ namespace LogisticaDepozit
         {
             if (passwordTextBox.Text == this.menuPage.password)
             {
-                myCon.ConnectionString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+                myCon.ConnectionString = HomePageForm.connString;
                 myCon.Open();
 
-                SqlCommand command = new SqlCommand("DELETE FROM Users\nWHERE Username LIKE '" + menuPage.username + "';", myCon);
+                SqlCommand command = new SqlCommand("DELETE FROM Users\nWHERE UserID LIKE '" + menuPage.userID + "';", myCon);
                 command.ExecuteNonQuery();
 
                 myCon.Close();
@@ -65,7 +65,7 @@ namespace LogisticaDepozit
                 menuPage.username = null;
                 menuPage.email = null;
                 menuPage.password = null;
-                menuPage.cartId = 0;
+                menuPage.userID = null;
                 menuPage.balance = 0;
                 menuPage.role = null;
 

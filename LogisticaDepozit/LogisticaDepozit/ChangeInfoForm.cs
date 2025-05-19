@@ -61,10 +61,12 @@ namespace LogisticaDepozit
             {
                 if (enterTextBox.Text.Length > 7)
                 {
-                    myCon.ConnectionString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+                    SqlConnection myCon2 = new SqlConnection(connectionString: HomePageForm.connString);
+                    myCon.ConnectionString = HomePageForm.connString;
                     myCon.Open();
+                    myCon2.Open();
 
-                    SqlCommand command = new SqlCommand("SELECT Username\nFROM Users\nWHERE Username NOT LIKE '" + this.menuPage.username + "';", myCon);
+                    SqlCommand command = new SqlCommand("SELECT Username\nFROM Users\nWHERE UserID LIKE '" + this.menuPage.userID + "';", myCon2);
                     SqlDataReader reader = command.ExecuteReader();
 
                     if (reader.Read())
@@ -74,7 +76,7 @@ namespace LogisticaDepozit
                         {
                             try
                             {
-                                command = new SqlCommand("UPDATE Users\nSET Username = '" + enterTextBox.Text + "'\nWHERE Username = '" + this.menuPage.username + "';", myCon);
+                                command = new SqlCommand("UPDATE Users\nSET Username = '" + enterTextBox.Text + "'\nWHERE UserID = '" + this.menuPage.userID + "';", myCon);
                                 command.ExecuteNonQuery();
                                 
 
@@ -88,14 +90,14 @@ namespace LogisticaDepozit
                             }
                             catch(Exception ex)
                             {
-                                MessageBox.Show("This username already exists");
+                                MessageBox.Show(ex.Message);
                             }
                         }
                         if (this.infoToChange == "email")
                         {
                             if (IsValidEmail(enterTextBox.Text))
                             {
-                                command = new SqlCommand("UPDATE Users\nSET Email = '" + enterTextBox.Text + "'\nWHERE Email = '" + this.menuPage.email + "';", myCon);
+                                command = new SqlCommand("UPDATE Users\nSET Email = '" + enterTextBox.Text + "'\nWHERE UserID = '" + this.menuPage.userID + "';", myCon);
                                 command.ExecuteNonQuery();
                                 foreach (Control c in this.settingsPage.Controls)
                                 {
@@ -112,12 +114,12 @@ namespace LogisticaDepozit
                         }
                         if (this.infoToChange == "password")
                         {
-                            command = new SqlCommand("UPDATE Users\nSET Password = '" + enterTextBox.Text + "'\nWHERE Password = '" + this.menuPage.password + "';", myCon);
+                            command = new SqlCommand("UPDATE Users\nSET Password = '" + enterTextBox.Text + "'\nWHERE UserID = '" + this.menuPage.userID + "';", myCon);
                             command.ExecuteNonQuery();
                         }
                     }
 
-
+                    myCon2.Close();
                     myCon.Close();
                 }
                 else

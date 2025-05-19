@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripBackS = new System.Windows.Forms.ToolStripButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox_Role = new System.Windows.Forms.ComboBox();
             this.signUpButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -65,31 +63,6 @@
             this.toolStripBackS.Name = "toolStripBackS";
             this.toolStripBackS.Size = new System.Drawing.Size(34, 24);
             this.toolStripBackS.Text = "toolStripButton1";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(291, 159);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 20);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Role";
-            // 
-            // comboBox_Role
-            // 
-            this.comboBox_Role.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox_Role.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox_Role.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_Role.FormattingEnabled = true;
-            this.comboBox_Role.Items.AddRange(new object[] {
-            "Manager",
-            "Costumer"});
-            this.comboBox_Role.Location = new System.Drawing.Point(296, 184);
-            this.comboBox_Role.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox_Role.Name = "comboBox_Role";
-            this.comboBox_Role.Size = new System.Drawing.Size(180, 28);
-            this.comboBox_Role.TabIndex = 21;
             // 
             // signUpButton
             // 
@@ -185,8 +158,6 @@
             this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(514, 395);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox_Role);
             this.Controls.Add(this.signUpButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -211,8 +182,6 @@
 
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripBackS;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox_Role;
         private System.Windows.Forms.Button signUpButton;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -66,6 +67,18 @@ namespace LogisticaDepozit
         {
             this.deleteAccountPage = new DeleteAccountForm(this, this.menuPage);
             this.deleteAccountPage.Show();
+        }
+        private void SettingsFormClosing(object sender, FormClosingEventArgs e)
+        {
+            menuPage.Hide();
+            SqlConnection myCon = new SqlConnection(connectionString: HomePageForm.connString);
+            myCon.Open();
+            SqlCommand cmd = new SqlCommand("SELECT Username FROM Users WHERE UserID LIKE '" + menuPage.userID + "';", myCon);
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read()) {
+                MenuForm menuPage1 = new MenuForm(menuPage.loginPage, menuPage.balance, reader.GetString(0));
+                menuPage1.Show();
+            }
         }
     }
 }
