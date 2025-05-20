@@ -5,16 +5,33 @@ using System.Text;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
+<<<<<<< Updated upstream:LogIn-SignUp/LogIn-SignUp/Form3.cs
 
 namespace LogIn_SignUp
+=======
+namespace LogisticaDepozit
+>>>>>>> Stashed changes:LogisticaDepozit/LogisticaDepozit/SignUpForm.cs
 {
     public partial class Form3 : Form
     {
         SqlConnection myCon = new SqlConnection();
+        private EmailService emailService;
+        private VerificationManager verificationManager;
+        private string verificationCode;
+        private string userEmail;
 
         public Form3()
         {
             InitializeComponent();
+<<<<<<< Updated upstream:LogIn-SignUp/LogIn-SignUp/Form3.cs
+=======
+            emailService = new EmailService();
+            verificationManager = new VerificationManager();
+
+            this.MinimumSize = new Size(this.Size.Width, this.Size.Height);
+            this.MaximumSize = new Size(this.Size.Width, this.Size.Height);
+
+>>>>>>> Stashed changes:LogisticaDepozit/LogisticaDepozit/SignUpForm.cs
             this.FormClosed += Form3_FormClosed;
             myCon.ConnectionString = @"data source=DESKTOP-8FI7P38\SQLEXPRESS;initial catalog=LogisticDB;integrated security=True;encrypt=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework";
         }
@@ -23,14 +40,16 @@ namespace LogIn_SignUp
         {
             Application.Exit();
         }
+
         private bool IsValidEmail(string email)
         {
-            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            string pattern = @"^[^\p{So}\p{Cn}\s@]+@[^@\s]+\.(ro|com)$";
             return Regex.IsMatch(email, pattern);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //string hashedPassword = HashPassword(txtBox_PassS.Text);
             if (txtBox_UserS.Text == "" || txtBox_MailS.Text == "" || txtBox_PassS.Text == "" || txtBox_ConfPassS.Text == "" || comboBox_Role.Text == "")
             {
                 MessageBox.Show("Completați toate câmpurile!");
@@ -49,26 +68,27 @@ namespace LogIn_SignUp
                 return;
             }
 
-            try
+            if (txtBox_PassS.Text.Length < 8)
             {
-                //string hashedPassword = HashPassword(txtBox_PassS.Text);
+                MessageBox.Show("Parola trebuie să aibă minim 8 caractere!");
+                return;
+            }
 
-                myCon.Open();
-                string query = "INSERT INTO Users (Username, Password, Email, Role, Balance, CartID) VALUES (@username, @password, @email, @role, @balance, @cartid)";
-                SqlCommand cmd = new SqlCommand(query, myCon);
-                cmd.Parameters.AddWithValue("@username", txtBox_UserS.Text);
-                cmd.Parameters.AddWithValue("@password", txtBox_PassS.Text);
-                cmd.Parameters.AddWithValue("@email", txtBox_MailS.Text);
-                cmd.Parameters.AddWithValue("@role", comboBox_Role.Text);
-                cmd.Parameters.AddWithValue("@balance", comboBox_Role.Text == "Manager" ? 1000000 : 0);
-                cmd.Parameters.AddWithValue("@cartid", DBNull.Value); // Sau setează un ID valid
+            if (txtBox_UserS.Text.Length < 6)
+            {
+                MessageBox.Show("Username-ul trebuie sa aiba minim 6 caractere");
+                return;
+            }
+            userEmail = txtBox_MailS.Text;
+            verificationCode = verificationManager.GenerateVerificationCode(userEmail);
 
-                cmd.ExecuteNonQuery();
-                myCon.Close();
-
-                MessageBox.Show("Cont creat cu succes!");
+            if (emailService.SendVerificationCode(userEmail, verificationCode))
+            {
+                VerificationForm verificationForm = new VerificationForm(userEmail, verificationManager);
+                verificationForm.Show();
                 this.Hide();
             }
+<<<<<<< Updated upstream:LogIn-SignUp/LogIn-SignUp/Form3.cs
             catch (Exception ex)
             {
                 MessageBox.Show("Eroare la inserare: " + ex.Message);
@@ -91,5 +111,33 @@ namespace LogIn_SignUp
                 }
             }
         */
+=======
+            else
+            {
+                MessageBox.Show("Eroare la trimiterea email-ului.");
+            }
+        }
+
+        private void toolStripBackS_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> Stashed changes:LogisticaDepozit/LogisticaDepozit/SignUpForm.cs
     }
 }
+/*
+               private string HashPassword(string password)
+               {
+                   using (SHA256 sha256 = SHA256.Create())
+                   {
+                       byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                       StringBuilder builder = new StringBuilder();
+                       foreach (byte b in bytes)
+                       {
+                           builder.Append(b.ToString("x2"));
+                       }
+                       return builder.ToString();
+                   }
+               }
+           }
+       */
