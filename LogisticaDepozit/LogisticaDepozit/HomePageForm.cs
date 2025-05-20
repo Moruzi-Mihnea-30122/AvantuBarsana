@@ -17,7 +17,7 @@ namespace LogisticaDepozit
     public partial class HomePageForm : Form
     {
         //DE MODIFICAT STRING-UL DOAR AICI
-        internal static string connString = @"Data Source=DESKTOP-QUDR49C;Initial Catalog=LogisticDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+        internal static string connString = @"data source=DESKTOP-OSUV1BO\SQLEXPRESS;initial catalog=LogisticDB;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework";
         internal SqlConnection myCon = new SqlConnection(connectionString: connString);
 
         internal Timer timer;

@@ -19,7 +19,6 @@ namespace LogisticaDepozit
         internal LoginForm loginPage;
         private SettingsForm settingsPage;
         private SqlConnection myCon = new SqlConnection();
-        private DataSet dsUsers;
         private AddFundsForm addBalancePage;
         private ProductStockForm productStock;
         private ShopForm shopForm;
@@ -75,10 +74,16 @@ namespace LogisticaDepozit
                         this.balance = Convert.ToDouble(reader.GetString(4));
                 }
 
-                if (this.role != "Manager")
+                if (this.role == "Client")
                 {
                     this.Controls.Remove(productStockButton);
                     this.Controls.Remove(orderManagerButton);
+                    this.Controls.Remove(addManagerButton);
+                }
+
+                if(this.role == "Manager")
+                {
+                    this.Controls.Remove(addManagerButton);
                 }
 
                 this.balanceTextBox.Text = this.balance.ToString() + " RON";
@@ -155,6 +160,12 @@ namespace LogisticaDepozit
             OrderManagerForm orderForm = new OrderManagerForm(this, balance);
             orderForm.Show();
             this.Hide();
+        }
+
+        private void addManagerButton_Click(object sender, EventArgs e)
+        {
+            AddManagerForm addManagerForm = new AddManagerForm(this);
+            addManagerForm.Show();
         }
     }
 }

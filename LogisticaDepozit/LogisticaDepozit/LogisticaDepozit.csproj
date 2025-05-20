@@ -78,6 +78,12 @@
     <Compile Include="AddFundsForm.Designer.cs">
       <DependentUpon>AddFundsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddManagerForm.Designer.cs">
+      <DependentUpon>AddManagerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddNewItemForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +198,9 @@
     </Compile>
     <EmbeddedResource Include="AddFundsForm.resx">
       <DependentUpon>AddFundsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddManagerForm.resx">
+      <DependentUpon>AddManagerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddNewItemForm.resx">
       <DependentUpon>AddNewItemForm.cs</DependentUpon>

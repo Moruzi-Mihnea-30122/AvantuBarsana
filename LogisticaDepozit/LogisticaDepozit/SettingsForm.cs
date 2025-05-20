@@ -34,9 +34,12 @@ namespace LogisticaDepozit
             this.overviewBalanceTextBox.Text = this.menuPage.balance.ToString() + " RON";
             this.overviewEmailTextBox.Text = this.menuPage.email.ToString();
 
-           // this.overviewButton.Enabled = false;
-
             this.defaultColor = this.menuPage.BackColor;
+
+            if(menuPage.role == "Owner")
+            {
+                this.Controls.Remove(this.deleteAccountButton);
+            }
         }
 
         private void changeUsernameClicked(object sender, EventArgs e)
