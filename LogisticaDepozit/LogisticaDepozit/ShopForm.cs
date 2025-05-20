@@ -75,17 +75,17 @@ namespace LogisticaDepozit
                 {
                     textBox.Text = (Convert.ToInt32(textBox.Text) - 1).ToString();
                     textBoxTotalPrice.Text = (Convert.ToDouble(textBoxTotalPrice.Text) - nprice).ToString();
-                    if (Convert.ToInt32(textBox.Text) == 0)
-                    {
+                    
+                    
                         myCon.Open();
                         SqlCommand cmd = new SqlCommand("Select ProductID FROM Products WHERE Name LIKE '" + productName + "';", myCon);
                         SqlDataReader reader = cmd.ExecuteReader();
                         reader.Read();
-                        MessageBox.Show(reader.GetString(0));
+                        
                         cartIds.Remove(reader.GetString(0));
                         myCon.Close();
                         reader.Close();
-                    }
+                    
                 }
                 else
                     MessageBox.Show("Quantity can't be negative");
