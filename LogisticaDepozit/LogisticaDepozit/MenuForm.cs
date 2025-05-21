@@ -73,15 +73,14 @@ namespace LogisticaDepozit
                     
                         this.balance = Convert.ToDouble(reader.GetString(4));
                 }
-
+                /*
                 if (this.role == "Manager")
                 {
                     this.Controls.Remove(productStockButton);
                     this.Controls.Remove(orderManagerButton);
-                    this.Controls.Remove(addManagerButton);
                 }
-
-                if(this.role == "Client")
+                */
+                if (this.role == "Client")
                 {
                     this.Controls.Remove(addManagerButton);
                 }
