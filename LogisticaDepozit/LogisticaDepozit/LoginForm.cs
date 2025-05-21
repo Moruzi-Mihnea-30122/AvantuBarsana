@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,29 +23,65 @@ namespace LogisticaDepozit
             this.MaximumSize = new Size(this.Size.Width, this.Size.Height);
 
         }
+        private string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                foreach (byte b in bytes)
+                {
+                    builder.Append(b.ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
 
         private void loginButtonClick(object sender, EventArgs e)
         {
-            
-            myCon.Open();
+            string username = usernameLoginTextBox.Text;
+            string enteredPassword = passwordLoginTextBox.Text;
+            string hashedPassword = HashPassword(enteredPassword); // hash-uiești parola introdusă
 
-            SqlCommand command = new SqlCommand("SELECT Username, Password\nFROM Users\nWHERE Username LIKE '" + usernameLoginTextBox.Text + "' AND Password LIKE '" + passwordLoginTextBox.Text + "';", myCon);
-            SqlDataReader reader = command.ExecuteReader();
-
-            if (!reader.Read())
+            try
             {
-                MessageBox.Show("Username or Password Incorrect");
-            }
-            else
-            {
-                MenuForm meniu = new MenuForm(this,0,null);
-                meniu.Show();
-                this.Hide();
-            }
+                myCon.Open();
 
-            myCon.Close();
-            reader.Close();
-            
+                SqlCommand command = new SqlCommand("SELECT Password FROM Users WHERE Username = @username", myCon);
+                command.Parameters.AddWithValue("@username", username);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    string storedHashedPassword = reader.GetString(0);
+
+                    if (hashedPassword == storedHashedPassword)
+                    {
+                        MenuForm meniu = new MenuForm(this, 0, null);
+                        meniu.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Username or Password Incorrect");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Username or Password Incorrect");
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                myCon.Close();
+            }
         }
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)

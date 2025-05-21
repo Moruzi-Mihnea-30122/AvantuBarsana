@@ -12,6 +12,10 @@ namespace LogisticaDepozit
     public partial class SignUpForm : Form
     {
         SqlConnection myCon = new SqlConnection();
+        private EmailService emailService;
+        private VerificationManager verificationManager;
+        private string verificationCode;
+        private string userEmail;
 
         public SignUpForm()
         {
@@ -22,6 +26,9 @@ namespace LogisticaDepozit
 
             this.FormClosed += Form3_FormClosed;
             myCon.ConnectionString = HomePageForm.connString;
+
+            emailService = new EmailService();
+            verificationManager = new VerificationManager();
         }
 
         private void Form3_FormClosed(object sender, FormClosedEventArgs e)
@@ -30,7 +37,7 @@ namespace LogisticaDepozit
         }
         private bool IsValidEmail(string email)
         {
-            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            string pattern = @"^[^\p{So}\p{Cn}\s@]+@[^@\s]+\.(ro|com)$";
             return Regex.IsMatch(email, pattern);
         }
 
@@ -54,40 +61,30 @@ namespace LogisticaDepozit
                 MessageBox.Show("Parola nu corespunde!");
                 return;
             }
-
-            try
+            if(txtBox_UserS.Text.Length < 5)
             {
-                //string hashedPassword = HashPassword(txtBox_PassS.Text);
+                MessageBox.Show("Username-ul trebuie sa aiba minim 5 caractere!");
+                return;
+            }
+            if (txtBox_PassS.Text.Length < 7)
+            {
+                MessageBox.Show("Parola trebuie sa aiba minim 7 caractere!");
+                return;
+            }
+            userEmail = txtBox_MailS.Text;
+            verificationCode = verificationManager.GenerateVerificationCode(userEmail);
 
-                myCon.Open();
-
-                SqlCommand cmd1 = new SqlCommand("Select * FROM Users", myCon);
-                SqlDataReader reader1 = cmd1.ExecuteReader();
-                string role = "Manager";
-                if (reader1.Read()) { role = "Customer"; }
-                reader1.Close();
-
-                string query = "INSERT INTO Users (UserID, Password, Email, Role, Balance, Username) VALUES (@userID, @password, @email, @role, @balance, @username)";
-                SqlCommand cmd = new SqlCommand(query, myCon);
-                cmd.Parameters.AddWithValue("@userID", txtBox_UserS.Text);
-                cmd.Parameters.AddWithValue("@username", txtBox_UserS.Text);
-                cmd.Parameters.AddWithValue("@password", txtBox_PassS.Text);
-                cmd.Parameters.AddWithValue("@email", txtBox_MailS.Text);
-                cmd.Parameters.AddWithValue("@role", role);
-                cmd.Parameters.AddWithValue("@balance", role == "Manager" ? 1000000 : 0);
-
-                cmd.ExecuteNonQuery();
-                myCon.Close();
-
-                MessageBox.Show("Cont creat cu succes!");
+            if (emailService.SendVerificationCode(userEmail, verificationCode))
+            {
+                VerificationForm verificationForm = new VerificationForm(userEmail, verificationManager, txtBox_UserS.Text, HashPassword(txtBox_PassS.Text));
+                verificationForm.Show();
                 this.Hide();
-                LoginForm loginFrom = new LoginForm();
-                loginFrom.Show();
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Eroare la inserare: " + ex.Message);
+                MessageBox.Show("Eroare la trimiterea email-ului.");
             }
+
         }
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
@@ -105,22 +102,18 @@ namespace LogisticaDepozit
                 this.Hide(); // Hide Form2
             }
         }
-
-        /*
-                private string HashPassword(string password)
+        private string HashPassword(string password)
+        {
+           using (SHA256 sha256 = SHA256.Create())
+           {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                foreach (byte b in bytes)
                 {
-                    using (SHA256 sha256 = SHA256.Create())
-                    {
-                        byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
-                        StringBuilder builder = new StringBuilder();
-                        foreach (byte b in bytes)
-                        {
-                            builder.Append(b.ToString("x2"));
-                        }
-                        return builder.ToString();
-                    }
+                    builder.Append(b.ToString("x2"));
                 }
-            }
-        */
+                return builder.ToString();
+           }
+        }
     }
 }

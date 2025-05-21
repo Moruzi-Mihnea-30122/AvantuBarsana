@@ -6,7 +6,9 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Net.Mail;
+using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
@@ -39,7 +41,7 @@ namespace LogisticaDepozit
                 this.reenterTextBox.UseSystemPasswordChar = true;
             }
         }
-
+        /*
         static bool IsValidEmail(string email)
         {
             try
@@ -50,6 +52,25 @@ namespace LogisticaDepozit
             catch
             {
                 return false;
+            }
+        }
+        */
+        private bool IsValidEmail(string email)
+        {
+            string pattern = @"^[^\p{So}\p{Cn}\s@]+@[^@\s]+\.(ro|com)$";
+            return Regex.IsMatch(email, pattern);
+        }
+        private string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                foreach (byte b in bytes)
+                {
+                    builder.Append(b.ToString("x2"));
+                }
+                return builder.ToString();
             }
         }
 
@@ -114,7 +135,8 @@ namespace LogisticaDepozit
                         }
                         if (this.infoToChange == "password")
                         {
-                            command = new SqlCommand("UPDATE Users\nSET Password = '" + enterTextBox.Text + "'\nWHERE UserID = '" + this.menuPage.userID + "';", myCon);
+                            string hashedPassword = HashPassword(enterTextBox.Text);
+                            command = new SqlCommand("UPDATE Users\nSET Password = '" + hashedPassword + "'\nWHERE UserID = '" + this.menuPage.userID + "';", myCon);
                             command.ExecuteNonQuery();
                         }
                     }

@@ -12,17 +12,13 @@ namespace LogisticaDepozit
     using System;
     using System.Collections.Generic;
     
-    public partial class Cart
+    public partial class ProductOrder
     {
-        public Cart()
-        {
-            this.Users = new HashSet<User>();
-        }
-    
-        public string CartID { get; set; }
+        public string ID { get; set; }
         public string OrderID { get; set; }
+        public string ProductID { get; set; }
     
         public virtual Order Order { get; set; }
-        public virtual ICollection<User> Users { get; set; }
+        public virtual Product Product { get; set; }
     }
 }

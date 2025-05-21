@@ -16,18 +16,16 @@ namespace LogisticaDepozit
     {
         public Order()
         {
-            this.Carts = new HashSet<Cart>();
+            this.ProductOrders = new HashSet<ProductOrder>();
         }
     
         public string OrderID { get; set; }
-        public string ID { get; set; }
-        public string ProductID { get; set; }
-        public string Qty { get; set; }
-        public string Price { get; set; }
+        public string userID { get; set; }
         public string Status { get; set; }
         public string TotalPrice { get; set; }
+        public string PlacedData { get; set; }
     
-        public virtual ICollection<Cart> Carts { get; set; }
-        public virtual Product Product { get; set; }
+        public virtual ICollection<ProductOrder> ProductOrders { get; set; }
+        public virtual User User { get; set; }
     }
 }

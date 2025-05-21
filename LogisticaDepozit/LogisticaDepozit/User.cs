@@ -14,13 +14,18 @@ namespace LogisticaDepozit
     
     public partial class User
     {
-        public string Username { get; set; }
+        public User()
+        {
+            this.Orders = new HashSet<Order>();
+        }
+    
+        public string UserID { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
         public string Role { get; set; }
         public string Balance { get; set; }
-        public string CartID { get; set; }
+        public string Username { get; set; }
     
-        public virtual Cart Cart { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }

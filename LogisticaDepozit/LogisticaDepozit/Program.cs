@@ -18,6 +18,11 @@ namespace LogisticaDepozit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            Environment.SetEnvironmentVariable("EMAIL_ADDRESS", "dariusturcu085@gmail.com");
+            Environment.SetEnvironmentVariable("EMAIL_PASSWORD", "mpyb eofx qyvf wlbv");
+
+
             Application.Run(new HomePageForm());
         }
     }

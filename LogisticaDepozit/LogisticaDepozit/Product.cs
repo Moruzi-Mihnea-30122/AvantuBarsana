@@ -16,7 +16,7 @@ namespace LogisticaDepozit
     {
         public Product()
         {
-            this.Orders = new HashSet<Order>();
+            this.ProductOrders = new HashSet<ProductOrder>();
         }
     
         public string ProductID { get; set; }
@@ -24,6 +24,6 @@ namespace LogisticaDepozit
         public string Price { get; set; }
         public string Qty { get; set; }
     
-        public virtual ICollection<Order> Orders { get; set; }
+        public virtual ICollection<ProductOrder> ProductOrders { get; set; }
     }
 }

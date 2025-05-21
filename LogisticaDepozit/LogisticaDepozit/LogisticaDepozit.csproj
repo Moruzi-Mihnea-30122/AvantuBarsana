@@ -90,21 +90,20 @@
     <Compile Include="AddNewItemForm.Designer.cs">
       <DependentUpon>AddNewItemForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cart.cs">
-      <DependentUpon>LogisticDM.tt</DependentUpon>
-    </Compile>
     <Compile Include="ChangeInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChangeInfoForm.Designer.cs">
       <DependentUpon>ChangeInfoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConnectionStrings.cs" />
     <Compile Include="DeleteAccountForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DeleteAccountForm.Designer.cs">
       <DependentUpon>DeleteAccountForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmailService.cs" />
     <Compile Include="HomePageForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,23 +122,23 @@
     <Compile Include="MenuForm.Designer.cs">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LogisticDM.Context.cs">
+    <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LogisticDM.Context.tt</DependentUpon>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="LogisticDM.cs">
+    <Compile Include="Model1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LogisticDM.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="LogisticDM.Designer.cs">
+    <Compile Include="Model1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LogisticDM.edmx</DependentUpon>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Order.cs">
-      <DependentUpon>LogisticDM.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="OrderDetailsForm.cs">
       <SubType>Form</SubType>
@@ -154,7 +153,10 @@
       <DependentUpon>OrderManagerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Product.cs">
-      <DependentUpon>LogisticDM.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductOrder.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductStockForm.cs">
       <SubType>Form</SubType>
@@ -188,8 +190,15 @@
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
-      <DependentUpon>LogisticDM.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="VerificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerificationForm.Designer.cs">
+      <DependentUpon>VerificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerificationManager.cs" />
     <Compile Include="ViewOrders.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,15 +252,18 @@
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VerificationForm.resx">
+      <DependentUpon>VerificationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewOrders.resx">
       <DependentUpon>ViewOrders.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="LogisticDM.edmx">
+    <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>LogisticDM.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="LogisticDM.edmx.diagram">
-      <DependentUpon>LogisticDM.edmx</DependentUpon>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -283,18 +295,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LogisticDM.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>LogisticDM.Context.cs</LastGenOutput>
-      <DependentUpon>LogisticDM.edmx</DependentUpon>
-    </Content>
-    <Content Include="LogisticDM.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LogisticDM.edmx</DependentUpon>
-      <LastGenOutput>LogisticDM.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <COMReference Include="AxWMPLib">
       <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
       <VersionMajor>1</VersionMajor>
@@ -321,6 +321,18 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
