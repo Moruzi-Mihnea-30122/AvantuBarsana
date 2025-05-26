@@ -116,6 +116,27 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogisticDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogisticDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogisticDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogisticDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogisticDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogisticDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerVerificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerVerificationForm.Designer.cs">
+      <DependentUpon>ManagerVerificationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,7 +159,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Order.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>LogisticDB.tt</DependentUpon>
     </Compile>
     <Compile Include="OrderDetailsForm.cs">
       <SubType>Form</SubType>
@@ -153,10 +174,10 @@
       <DependentUpon>OrderManagerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Product.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>LogisticDB.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductOrder.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>LogisticDB.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductStockForm.cs">
       <SubType>Form</SubType>
@@ -190,7 +211,7 @@
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>LogisticDB.tt</DependentUpon>
     </Compile>
     <Compile Include="VerificationForm.cs">
       <SubType>Form</SubType>
@@ -225,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerVerificationForm.resx">
+      <DependentUpon>ManagerVerificationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
@@ -262,6 +286,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="LogisticDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LogisticDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="LogisticDB.edmx.diagram">
+      <DependentUpon>LogisticDB.edmx</DependentUpon>
+    </None>
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
@@ -323,6 +354,16 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LogisticDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LogisticDB.edmx</DependentUpon>
+      <LastGenOutput>LogisticDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="LogisticDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LogisticDB.edmx</DependentUpon>
+      <LastGenOutput>LogisticDB.cs</LastGenOutput>
+    </Content>
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>

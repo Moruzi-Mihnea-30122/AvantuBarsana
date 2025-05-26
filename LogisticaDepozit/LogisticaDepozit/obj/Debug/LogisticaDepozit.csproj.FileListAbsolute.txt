@@ -112,3 +112,5 @@ E:\Proiect_II\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\Logistic
 E:\Proiect_II\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.exe
 E:\Proiect_II\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.pdb
 E:\Proiect_II\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.VerificationForm.resources
+C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.VerificationForm.resources
+C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.ManagerVerificationForm.resources

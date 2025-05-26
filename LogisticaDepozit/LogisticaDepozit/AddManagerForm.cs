@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -16,6 +17,10 @@ namespace LogisticaDepozit
     {
         MenuForm menuForm;
         SqlConnection myCon = new SqlConnection(HomePageForm.connString);
+        private string verificationCode;
+        private string userEmail;
+        private EmailService emailService;
+        private VerificationManager verificationManager;
 
         public AddManagerForm(MenuForm form)
         {
@@ -24,11 +29,14 @@ namespace LogisticaDepozit
             this.MinimumSize = this.Size;
 
             this.menuForm = form;
+
+            emailService = new EmailService();
+            verificationManager = new VerificationManager();
         }
 
         private bool IsValidEmail(string email)
         {
-            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            string pattern = @"^[^\p{So}\p{Cn}\s@]+@[^@\s]+\.(ro|com)$";
             return Regex.IsMatch(email, pattern);
         }
 
@@ -51,21 +59,46 @@ namespace LogisticaDepozit
                 MessageBox.Show("Parola nu corespunde!");
                 return;
             }
-            myCon.Open();
 
-            try
+            if (usernameTextBox.Text.Length < 5)
             {
-                SqlCommand command = new SqlCommand("INSERT INTO Users (UserID, Password, Email, Role, Balance, Username)\nVALUES ('" + usernameTextBox.Text + "', '" + passwordTextBox.Text + "', '" + emailTextBox.Text + "', 'Manager', '99999', '" + usernameTextBox.Text + "');", myCon); ;
-                command.ExecuteNonQuery();
+                MessageBox.Show("Username-ul trebuie sa aiba minim 5 caractere!");
+                return;
             }
-            catch (Exception ex)
+            if (passwordTextBox.Text.Length < 7)
             {
-                MessageBox.Show("Error: "+ex);
+                MessageBox.Show("Parola trebuie sa aiba minim 7 caractere!");
+                return;
             }
 
-            myCon.Close();
-            MessageBox.Show("Manager Added Succesfully");
+            userEmail = emailTextBox.Text;
+            verificationCode = verificationManager.GenerateVerificationCode(userEmail);
+
+            if (emailService.SendVerificationCode(userEmail, verificationCode))
+            {
+                ManagerVerificationForm verificationForm = new ManagerVerificationForm(emailTextBox.Text, verificationManager, usernameTextBox.Text, HashPassword(passwordTextBox.Text));
+                verificationForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Eroare la trimiterea email-ului.");
+            }
+
             this.Close();
+        }
+        private string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                foreach (byte b in bytes)
+                {
+                    builder.Append(b.ToString("x2"));
+                }
+                return builder.ToString();
+            }
         }
     }
 }

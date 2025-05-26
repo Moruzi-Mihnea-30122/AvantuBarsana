@@ -73,15 +73,16 @@ namespace LogisticaDepozit
                     
                         this.balance = Convert.ToDouble(reader.GetString(4));
                 }
-                /*
+                
                 if (this.role == "Manager")
+                {
+                    this.Controls.Remove(addManagerButton);
+                }
+                
+                if (this.role == "Customer")
                 {
                     this.Controls.Remove(productStockButton);
                     this.Controls.Remove(orderManagerButton);
-                }
-                */
-                if (this.role == "Client")
-                {
                     this.Controls.Remove(addManagerButton);
                 }
 
@@ -99,6 +100,7 @@ namespace LogisticaDepozit
         {
             settingsPage = new SettingsForm(this);
             settingsPage.Show();
+            this.Hide();
         }
 
         private void startShoppingClicked(object sender, EventArgs e)

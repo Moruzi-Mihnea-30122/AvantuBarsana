@@ -25,6 +25,7 @@ namespace LogisticaDepozit
         public SettingsForm(MenuForm menuPage)
         {
             InitializeComponent();
+
             this.menuPage = menuPage;
 
             this.MinimumSize = new Size(this.Size.Width, this.Size.Height);
@@ -73,7 +74,6 @@ namespace LogisticaDepozit
         }
         private void SettingsFormClosing(object sender, FormClosingEventArgs e)
         {
-            menuPage.Hide();
             SqlConnection myCon = new SqlConnection(connectionString: HomePageForm.connString);
             myCon.Open();
             SqlCommand cmd = new SqlCommand("SELECT Username FROM Users WHERE UserID LIKE '" + menuPage.userID + "';", myCon);

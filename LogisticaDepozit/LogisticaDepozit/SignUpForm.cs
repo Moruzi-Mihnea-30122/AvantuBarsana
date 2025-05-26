@@ -85,6 +85,7 @@ namespace LogisticaDepozit
                 MessageBox.Show("Eroare la trimiterea email-ului.");
             }
 
+
         }
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)

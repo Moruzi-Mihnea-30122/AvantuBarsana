@@ -39,6 +39,7 @@ namespace LogisticaDepozit
                 {
                     verificationCodes.Remove(email);
                     Console.WriteLine("Cod validat cu succes.");
+                 
                     return true;
                 }
             }

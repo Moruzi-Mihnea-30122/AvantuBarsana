@@ -274,6 +274,10 @@ namespace LogisticaDepozit
         private void toolStripBackS_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void formClosing(object sender, FormClosingEventArgs e)
+        {
             MenuForm menuPage1 = new MenuForm(logInForm, balance, null);
             //menuPage1.balance = this.balance;
             menuPage1.Show();

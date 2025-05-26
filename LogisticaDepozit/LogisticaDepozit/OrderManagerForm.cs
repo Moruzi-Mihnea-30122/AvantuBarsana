@@ -51,7 +51,7 @@ namespace LogisticaDepozit
             acceptButton.ForeColor = Color.White;
             acceptButton.Size = new Size(40, 40);
             acceptButton.Font = new Font("Segoe UI", 9, FontStyle.Bold);
-            acceptButton.Location = new Point(lastX + 270, lastY);
+            acceptButton.Location = new Point(lastX + 290, lastY);
             acceptButton.BackColor = Color.FromArgb(30, 70, 160);
             //
             // Expresie lambda pentru event

@@ -90,11 +90,21 @@ namespace LogisticaDepozit
             InitializeComponent();
         }
 
-        private void toolStripBackS_Click(object sender, EventArgs e)
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            this.Close();
+
+        }
+
+        private void formClosing(object sender, FormClosingEventArgs e)
+        {
             MenuForm menuPage1 = new MenuForm(menuPage.loginPage, menuPage.balance, null);
             menuPage1.Show();
         }
+
+        private void toolStripBackS_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }
