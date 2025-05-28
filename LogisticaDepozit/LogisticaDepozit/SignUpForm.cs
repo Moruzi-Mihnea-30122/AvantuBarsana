@@ -87,6 +87,20 @@ namespace LogisticaDepozit
 
 
         }
+        private void checkBoxShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxShowPassword.Checked)
+            {
+                txtBox_ConfPassS.UseSystemPasswordChar = false; // afișează textul
+                txtBox_PassS.UseSystemPasswordChar = false;
+
+            }
+            else
+            {
+                txtBox_PassS.UseSystemPasswordChar = true; // ascunde textul
+                txtBox_ConfPassS.UseSystemPasswordChar = true;
+            }
+        }
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {

@@ -31,6 +31,15 @@ namespace LogisticaDepozit
         {
             try
             {
+                string name = textBox_name.Text.Trim();
+
+                // Verifică dacă numele conține cel puțin o literă
+                if (!name.Any(char.IsLetter))
+                {
+                    MessageBox.Show("Numele produsului trebuie să conțină cel puțin o literă.");
+                    return;
+                }
+
                 myCon.Open();
                 SqlCommand cmd = new SqlCommand("Insert INTO Products(ProductID, Name, Price, Qty) VALUES (@productID, @name, @price, @qty) ", myCon);
                 cmd.Parameters.AddWithValue("@productID", (lastIndex + 1).ToString());

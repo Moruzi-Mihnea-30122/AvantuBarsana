@@ -17,6 +17,10 @@ namespace LogisticaDepozit
         private readonly string username;
         private readonly string hashedPassword;
         private readonly VerificationManager verificationManager;
+        private bool clicked;
+        private DateTime lastResendTime = DateTime.MinValue;
+        private Timer resendCooldownTimer;
+        private Button btnResend;
 
         public ManagerVerificationForm(string email, VerificationManager manager, string username, string hashedPassword)
         {
@@ -25,6 +29,13 @@ namespace LogisticaDepozit
             this.username = username;
             this.hashedPassword = hashedPassword;
             this.verificationManager = manager;
+            btn_RESEND.Enabled = false;
+
+
+
+            resendCooldownTimer = new Timer();
+            resendCooldownTimer.Interval = 1000;
+            resendCooldownTimer.Tick += new EventHandler(ResendCooldownTimer_Tick); // FIX: asigură conectarea evenimentului
         }
 
         private void btnVerify_Click(object sender, EventArgs e)
@@ -41,7 +52,9 @@ namespace LogisticaDepozit
 
                         SqlCommand cmd1 = new SqlCommand("Select * FROM Users", conn);
                         SqlDataReader reader1 = cmd1.ExecuteReader();
-                        string role = "Manager";
+                        string role = "Owner";
+                        if (reader1.Read()) { role = "Customer"; }
+                        reader1.Close();
 
                         string query = "INSERT INTO Users (UserID, Password, Email, Role, Balance, Username) VALUES (@userID, @password, @email, @role, @balance, @username)";
                         SqlCommand cmd = new SqlCommand(query, conn);
@@ -53,11 +66,12 @@ namespace LogisticaDepozit
                         cmd.Parameters.AddWithValue("@balance", role == "Owner" ? 1000000 : 0);
 
                         cmd.ExecuteNonQuery();
+                        conn.Close();
                     }
 
                     MessageBox.Show("Cont creat cu succes!");
+                    clicked = true;
                     this.Close();
-
                 }
                 catch (Exception ex)
                 {
@@ -68,12 +82,48 @@ namespace LogisticaDepozit
             {
                 MessageBox.Show("Cod incorect sau expirat.");
             }
+        }
 
+        private void btnResend_Click(object sender, EventArgs e)
+        {
+            TimeSpan timeSinceLastResend = DateTime.Now - lastResendTime;
+            if (timeSinceLastResend.TotalSeconds < 30)
+            {
+                int secondsLeft = 30 - (int)timeSinceLastResend.TotalSeconds;
+                MessageBox.Show($"Poți retrimite codul după {secondsLeft} secunde.");
+                return;
+            }
 
+            string newCode = verificationManager.GenerateVerificationCode(email);
+            EmailService emailService = new EmailService();
+
+            if (emailService.SendVerificationCode(email, newCode))
+            {
+                MessageBox.Show("Codul a fost retrimis cu succes.");
+                lastResendTime = DateTime.Now;
+                btn_RESEND.Enabled = false;
+                resendCooldownTimer.Start();
+            }
+            else
+            {
+                MessageBox.Show("Eroare la retrimiterea codului.");
+            }
+        }
+
+        private void ResendCooldownTimer_Tick(object sender, EventArgs e)
+        {
+            Console.WriteLine("Timer tick"); // debug vizual
+
+            if ((DateTime.Now - lastResendTime).TotalSeconds >= 30)
+            {
+                btn_RESEND.Enabled = true;
+                resendCooldownTimer.Stop();
+            }
         }
 
         private void formClosing(object sender, FormClosingEventArgs e)
         {
+           
         }
     }
 }

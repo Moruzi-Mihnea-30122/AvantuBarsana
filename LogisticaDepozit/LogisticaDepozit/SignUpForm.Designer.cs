@@ -40,6 +40,7 @@
             this.txtBox_PassS = new System.Windows.Forms.TextBox();
             this.txtBox_ConfPassS = new System.Windows.Forms.TextBox();
             this.txtBox_UserS = new System.Windows.Forms.TextBox();
+            this.checkBoxShowPassword = new System.Windows.Forms.CheckBox();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             this.toolStripBackS});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(58, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(27, 27);
             this.toolStrip1.TabIndex = 23;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
@@ -145,12 +146,23 @@
             this.txtBox_UserS.Size = new System.Drawing.Size(119, 20);
             this.txtBox_UserS.TabIndex = 12;
             // 
+            // checkBoxShowPassword
+            // 
+            this.checkBoxShowPassword.AutoSize = true;
+            this.checkBoxShowPassword.Location = new System.Drawing.Point(197, 146);
+            this.checkBoxShowPassword.Name = "checkBoxShowPassword";
+            this.checkBoxShowPassword.Size = new System.Drawing.Size(102, 17);
+            this.checkBoxShowPassword.TabIndex = 24;
+            this.checkBoxShowPassword.Text = "Show Password";
+            this.checkBoxShowPassword.UseVisualStyleBackColor = true;
+            // 
             // SignUpForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(343, 257);
+            this.Controls.Add(this.checkBoxShowPassword);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.signUpButton);
             this.Controls.Add(this.label4);
@@ -185,5 +197,6 @@
         private System.Windows.Forms.TextBox txtBox_PassS;
         private System.Windows.Forms.TextBox txtBox_ConfPassS;
         private System.Windows.Forms.TextBox txtBox_UserS;
+        private System.Windows.Forms.CheckBox checkBoxShowPassword;
     }
 }

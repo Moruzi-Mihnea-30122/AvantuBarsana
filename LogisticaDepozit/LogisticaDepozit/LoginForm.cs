@@ -83,6 +83,18 @@ namespace LogisticaDepozit
                 myCon.Close();
             }
         }
+        private void checkBoxShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxShowPassword.Checked)
+            {
+                passwordLoginTextBox.UseSystemPasswordChar = false; // afișează textul
+            }
+            else
+            {
+                passwordLoginTextBox.UseSystemPasswordChar = true; // ascunde textul
+            }
+        }
+
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {

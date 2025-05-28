@@ -17,7 +17,7 @@ namespace LogisticaDepozit
     public partial class HomePageForm : Form
     {
         //DE MODIFICAT STRING-UL DOAR AICI
-        internal static string connString =ConnectionStrings.Dorel;
+        internal static string connString =ConnectionStrings.Darius;
         internal SqlConnection myCon = new SqlConnection(connectionString: connString);
 
         internal Timer timer;
