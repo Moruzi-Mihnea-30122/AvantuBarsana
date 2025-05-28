@@ -29,7 +29,7 @@ namespace LogisticaDepozit
             this.username = username;
             this.hashedPassword = hashedPassword;
             this.verificationManager = manager;
-            btn_RESEND.Enabled = false;
+            //btn_RESEND.Enabled = false;
 
 
 

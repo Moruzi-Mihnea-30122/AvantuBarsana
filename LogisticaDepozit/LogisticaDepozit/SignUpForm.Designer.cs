@@ -1,4 +1,6 @@
-﻿namespace LogisticaDepozit
+﻿using System;
+
+namespace LogisticaDepozit
 {
     partial class SignUpForm
     {
@@ -155,6 +157,7 @@
             this.checkBoxShowPassword.TabIndex = 24;
             this.checkBoxShowPassword.Text = "Show Password";
             this.checkBoxShowPassword.UseVisualStyleBackColor = true;
+            this.checkBoxShowPassword.CheckedChanged += new EventHandler(checkBoxShowPassword_CheckedChanged);
             // 
             // SignUpForm
             // 
