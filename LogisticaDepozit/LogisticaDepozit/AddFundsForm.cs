@@ -30,7 +30,7 @@ namespace LogisticaDepozit
 
         private void confirmTransactionClick(object sender, EventArgs e)
         {
-            if(Convert.ToInt32(enterSumTextBox.Text) != 0 && cardNumberTextBox.Text.Length == cardNumberTextBox.MaxLength)
+            if(Convert.ToInt32(enterSumTextBox.Text) > 0 && cardNumberTextBox.Text.Length == cardNumberTextBox.MaxLength)
             {
                 myCon.ConnectionString = HomePageForm.connString;
                 myCon.Open();
@@ -62,7 +62,12 @@ namespace LogisticaDepozit
 
                 myCon.Close();
             }
-            this.Close();
+            else
+            {
+                MessageBox.Show("Please enter a valid amount and card number.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; 
+            }
+                this.Close();
         }
     }
 }

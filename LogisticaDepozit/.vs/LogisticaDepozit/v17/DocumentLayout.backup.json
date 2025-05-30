@@ -3,14 +3,22 @@
   "WorkspaceRootPath": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|e:\\proiect_ii\\avantubarsana\\logisticadepozit\\logisticadepozit\\addfundsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\addfundsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_8FI7P38_SQLEXPRESS/LogisticDB/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|e:\\proiect_ii\\avantubarsana\\logisticadepozit\\logisticadepozit\\verificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\verificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\verificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|e:\\proiect_ii\\avantubarsana\\logisticadepozit\\logisticadepozit\\signupform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|e:\\proiect_ii\\avantubarsana\\logisticadepozit\\logisticadepozit\\managerverificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\managerverificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\signupform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\signupform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -24,10 +32,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\managerverificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\managerverificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\managerverificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|solutionrelative:logisticadepozit\\managerverificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18EBC471-12E8-44B5-81BF-946C95A5E3C3}|LogisticaDepozit\\LogisticaDepozit.csproj|E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\logisticadepozit\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -142,47 +146,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "dbo.Users [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_8FI7P38_SQLEXPRESS/LogisticDB/True/SqlTable/dbo.Users.sql",
               "ToolTip": "dbo.Users [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-28T16:38:02.263Z",
+              "WhenOpened": "2025-05-30T08:22:26.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddFundsForm.cs",
+              "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\AddFundsForm.cs",
+              "RelativeDocumentMoniker": "LogisticaDepozit\\AddFundsForm.cs",
+              "ToolTip": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\AddFundsForm.cs",
+              "RelativeToolTip": "LogisticaDepozit\\AddFundsForm.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T08:20:36.574Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SignUpForm.Designer.cs",
-              "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SignUpForm.Designer.cs",
-              "RelativeDocumentMoniker": "LogisticaDepozit\\SignUpForm.Designer.cs",
-              "ToolTip": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SignUpForm.Designer.cs",
-              "RelativeToolTip": "LogisticaDepozit\\SignUpForm.Designer.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAowJ8AAABuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T16:36:30.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "VerificationForm.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\VerificationForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\VerificationForm.cs",
               "ToolTip": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\VerificationForm.cs",
               "RelativeToolTip": "LogisticaDepozit\\VerificationForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T07:48:28.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ManagerVerificationForm.cs [Design]",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ManagerVerificationForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\ManagerVerificationForm.cs",
@@ -194,19 +198,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\LoginForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\LoginForm.cs",
               "ToolTip": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\LoginForm.cs [Design]",
               "RelativeToolTip": "LogisticaDepozit\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T08:28:17.476Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-20T08:28:17.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AddNewItemForm.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\AddNewItemForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\AddNewItemForm.cs",
@@ -218,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "SignUpForm.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SignUpForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\SignUpForm.cs",
@@ -230,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "LoginForm.Designer.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\LoginForm.Designer.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\LoginForm.Designer.cs",
@@ -238,12 +241,36 @@
               "RelativeToolTip": "LogisticaDepozit\\LoginForm.Designer.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAowH4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T09:13:25.009Z",
+              "WhenOpened": "2025-05-28T09:13:25.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ManagerVerificationForm.cs",
+              "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ManagerVerificationForm.cs",
+              "RelativeDocumentMoniker": "LogisticaDepozit\\ManagerVerificationForm.cs",
+              "ToolTip": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ManagerVerificationForm.cs",
+              "RelativeToolTip": "LogisticaDepozit\\ManagerVerificationForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T07:48:23.324Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
+              "Title": "SignUpForm.Designer.cs",
+              "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SignUpForm.Designer.cs",
+              "RelativeDocumentMoniker": "LogisticaDepozit\\SignUpForm.Designer.cs",
+              "ToolTip": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SignUpForm.Designer.cs",
+              "RelativeToolTip": "LogisticaDepozit\\SignUpForm.Designer.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAowJ8AAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T16:36:30.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "SignUpForm.cs [Design]",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SignUpForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\SignUpForm.cs",
@@ -254,20 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ManagerVerificationForm.cs",
-              "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ManagerVerificationForm.cs",
-              "RelativeDocumentMoniker": "LogisticaDepozit\\ManagerVerificationForm.cs",
-              "ToolTip": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ManagerVerificationForm.cs",
-              "RelativeToolTip": "LogisticaDepozit\\ManagerVerificationForm.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAowB8AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T07:48:23.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\LoginForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\LoginForm.cs",
@@ -275,23 +289,23 @@
               "RelativeToolTip": "LogisticaDepozit\\LoginForm.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAAAFUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T15:59:06.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T15:59:06.391Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "VerificationForm.cs [Design]",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\VerificationForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\VerificationForm.cs",
               "ToolTip": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\VerificationForm.cs [Design]",
               "RelativeToolTip": "LogisticaDepozit\\VerificationForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T16:27:02.16Z"
+              "WhenOpened": "2025-05-21T16:27:02.16Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ShopForm.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ShopForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\ShopForm.cs",
@@ -302,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AddManagerForm.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\AddManagerForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\AddManagerForm.cs",
@@ -314,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "HomePageForm.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\HomePageForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\HomePageForm.cs",
@@ -326,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "MenuForm.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\MenuForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\MenuForm.cs",
@@ -338,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ShopForm.cs [Design]",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ShopForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\ShopForm.cs",
@@ -348,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "SettingsForm.cs [Design]",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SettingsForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\SettingsForm.cs",
@@ -358,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ViewOrders.cs [Design]",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ViewOrders.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\ViewOrders.cs",
@@ -368,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ViewOrders.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ViewOrders.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\ViewOrders.cs",
@@ -380,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "SettingsForm.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\SettingsForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\SettingsForm.cs",
@@ -392,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "MenuForm.cs [Design]",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\MenuForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\MenuForm.cs",
@@ -403,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "dbo.Users.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_OSUV1BO_SQLEXPRESS/LogisticDB/True/SqlTable/dbo.Users.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_OSUV1BO_SQLEXPRESS/LogisticDB/True/SqlTable/dbo.Users.sql",
@@ -412,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "VerificationManager.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\VerificationManager.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\VerificationManager.cs",
@@ -424,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "dbo.ProductOrder.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_OSUV1BO_SQLEXPRESS/LogisticDB/True/SqlTable/dbo.ProductOrder.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_OSUV1BO_SQLEXPRESS/LogisticDB/True/SqlTable/dbo.ProductOrder.sql",
@@ -433,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "dbo.Orders.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_OSUV1BO_SQLEXPRESS/LogisticDB/True/SqlTable/dbo.Orders.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_OSUV1BO_SQLEXPRESS/LogisticDB/True/SqlTable/dbo.Orders.sql",
@@ -442,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "OrderManagerForm.cs [Design]",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\OrderManagerForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\OrderManagerForm.cs",
@@ -452,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "OrderManagerForm.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\OrderManagerForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\OrderManagerForm.cs",
@@ -464,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "ConnectionStrings.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ConnectionStrings.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\ConnectionStrings.cs",
@@ -476,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "HomePageForm.cs [Design]",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\HomePageForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\HomePageForm.cs",
@@ -487,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\Program.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\Program.cs",
@@ -499,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "ChangeInfoForm.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ChangeInfoForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\ChangeInfoForm.cs",
@@ -511,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "OrderDetailsForm.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\OrderDetailsForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\OrderDetailsForm.cs",
@@ -523,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "ProductStockForm.cs",
               "DocumentMoniker": "E:\\Proiect_II\\AvantuBarsana\\LogisticaDepozit\\LogisticaDepozit\\ProductStockForm.cs",
               "RelativeDocumentMoniker": "LogisticaDepozit\\ProductStockForm.cs",

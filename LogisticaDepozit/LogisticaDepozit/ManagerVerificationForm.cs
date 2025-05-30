@@ -52,9 +52,8 @@ namespace LogisticaDepozit
 
                         SqlCommand cmd1 = new SqlCommand("Select * FROM Users", conn);
                         SqlDataReader reader1 = cmd1.ExecuteReader();
-                        string role = "Owner";
-                        if (reader1.Read()) { role = "Customer"; }
-                        reader1.Close();
+                        string role = "Manager";
+                        
 
                         string query = "INSERT INTO Users (UserID, Password, Email, Role, Balance, Username) VALUES (@userID, @password, @email, @role, @balance, @username)";
                         SqlCommand cmd = new SqlCommand(query, conn);
