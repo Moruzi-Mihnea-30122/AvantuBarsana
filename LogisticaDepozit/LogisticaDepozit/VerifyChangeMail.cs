@@ -11,34 +11,30 @@ using System.Windows.Forms;
 
 namespace LogisticaDepozit
 {
-    public partial class ManagerVerificationForm : Form
+    public partial class VerifyChangeMail : Form
     {
         private readonly string email;
-        private readonly string username;
-        private readonly string hashedPassword;
+        private readonly string userId;
         private readonly VerificationManager verificationManager;
         private bool clicked;
         private DateTime lastResendTime = DateTime.MinValue;
         private Timer resendCooldownTimer;
-        private Button btnResend;
 
-        public ManagerVerificationForm(string email, VerificationManager manager, string username, string hashedPassword)
+        public VerifyChangeMail(string email, string userId, VerificationManager manager)
         {
             InitializeComponent();
             this.email = email;
-            this.username = username;
-            this.hashedPassword = hashedPassword;
+            this.userId = userId;
             this.verificationManager = manager;
-            //btn_RESEND.Enabled = false;
 
-
+            btn_RESEND.Enabled = false;
 
             resendCooldownTimer = new Timer();
             resendCooldownTimer.Interval = 1000;
-            resendCooldownTimer.Tick += new EventHandler(ResendCooldownTimer_Tick); // FIX: asigură conectarea evenimentului
+            resendCooldownTimer.Tick += new EventHandler(ResendCooldownTimer_Tick);
         }
 
-        private void btnVerify_Click(object sender, EventArgs e)
+        private void btn_Verify_Click(object sender, EventArgs e)
         {
             string inputCode = txtVerificationCode.Text;
 
@@ -50,31 +46,20 @@ namespace LogisticaDepozit
                     {
                         conn.Open();
 
-                        SqlCommand cmd1 = new SqlCommand("Select * FROM Users", conn);
-                        //SqlDataReader reader1 = cmd1.ExecuteReader();
-                        string role = "Manager";
-                        
-
-                        string query = "INSERT INTO Users (UserID, Password, Email, Role, Balance, Username) VALUES (@userID, @password, @email, @role, @balance, @username)";
-                        SqlCommand cmd = new SqlCommand(query, conn);
-                        cmd.Parameters.AddWithValue("@userID", username);
-                        cmd.Parameters.AddWithValue("@username", username);
-                        cmd.Parameters.AddWithValue("@password", hashedPassword);
-                        cmd.Parameters.AddWithValue("@email", email);
-                        cmd.Parameters.AddWithValue("@role", role);
-                        cmd.Parameters.AddWithValue("@balance", role == "Owner" ? 1000000 : 0);
+                        SqlCommand cmd = new SqlCommand("UPDATE Users SET Email = @newEmail WHERE UserID = @userID", conn);
+                        cmd.Parameters.AddWithValue("@newEmail", email);
+                        cmd.Parameters.AddWithValue("@userID", userId);
 
                         cmd.ExecuteNonQuery();
-                        conn.Close();
                     }
 
-                    MessageBox.Show("Cont creat cu succes!");
+                    MessageBox.Show("Email schimbat cu succes!");
                     clicked = true;
                     this.Close();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Eroare la salvarea utilizatorului: " + ex.Message);
+                    MessageBox.Show("Eroare la schimbarea emailului: " + ex.Message);
                 }
             }
             else
@@ -83,7 +68,7 @@ namespace LogisticaDepozit
             }
         }
 
-        private void btnResend_Click(object sender, EventArgs e)
+        private void btn_RESEND_Click(object sender, EventArgs e)
         {
             TimeSpan timeSinceLastResend = DateTime.Now - lastResendTime;
             if (timeSinceLastResend.TotalSeconds < 30)
@@ -111,18 +96,12 @@ namespace LogisticaDepozit
 
         private void ResendCooldownTimer_Tick(object sender, EventArgs e)
         {
-            Console.WriteLine("Timer tick"); // debug vizual
-
             if ((DateTime.Now - lastResendTime).TotalSeconds >= 30)
             {
                 btn_RESEND.Enabled = true;
                 resendCooldownTimer.Stop();
             }
         }
-
-        private void formClosing(object sender, FormClosingEventArgs e)
-        {
-           
-        }
     }
+
 }

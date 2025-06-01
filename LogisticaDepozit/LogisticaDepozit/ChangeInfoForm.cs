@@ -118,21 +118,31 @@ namespace LogisticaDepozit
                         {
                             if (IsValidEmail(enterTextBox.Text))
                             {
-                                command = new SqlCommand("UPDATE Users\nSET Email = '" + enterTextBox.Text + "'\nWHERE UserID = '" + this.menuPage.userID + "';", myCon);
-                                command.ExecuteNonQuery();
-                                foreach (Control c in this.settingsPage.Controls)
+                                string newEmail = enterTextBox.Text.Trim();
+                                VerificationManager verificationManager = new VerificationManager();
+                                string code = verificationManager.GenerateVerificationCode(newEmail);
+                                EmailService emailService = new EmailService();
+
+                                if (emailService.SendVerificationCode(newEmail, code))
                                 {
-                                    if (c.TabIndex == 7)
-                                    {
-                                        c.Text = enterTextBox.Text;
-                                    }
+                                    MessageBox.Show("Un cod de verificare a fost trimis la noua adresă.");
+                                    var verifyForm = new VerifyChangeMail(newEmail, this.menuPage.userID, verificationManager);
+                                    verifyForm.Show();
+                                    this.Hide();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Eroare la trimiterea codului de verificare.");
                                 }
                             }
                             else
                             {
-                                MessageBox.Show("Invalid email");
+                                MessageBox.Show("Email invalid.");
                             }
+
+                            return; // ieșim ca să nu se mai închidă formularul înainte de verificare
                         }
+
                         if (this.infoToChange == "password")
                         {
                             string hashedPassword = HashPassword(enterTextBox.Text);
