@@ -27,6 +27,23 @@ namespace LogisticaDepozit
             this.menuPage = menuPage;
             this.settingsPage = settingsPage;
         }
+        private void enterSumTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permite doar cifre și backspace
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cardNumberTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permite doar cifre și backspace
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
 
         private void confirmTransactionClick(object sender, EventArgs e)
         {

@@ -1,4 +1,6 @@
-﻿namespace LogisticaDepozit
+﻿using System.Windows.Forms;
+
+namespace LogisticaDepozit
 {
     partial class AddFundsForm
     {
@@ -42,6 +44,7 @@
             this.cardNumberTextBox.Name = "cardNumberTextBox";
             this.cardNumberTextBox.Size = new System.Drawing.Size(193, 22);
             this.cardNumberTextBox.TabIndex = 0;
+            this.cardNumberTextBox.KeyPress += new KeyPressEventHandler(cardNumberTextBox_KeyPress);
             // 
             // enterSumTextBox
             // 
@@ -49,6 +52,7 @@
             this.enterSumTextBox.Name = "enterSumTextBox";
             this.enterSumTextBox.Size = new System.Drawing.Size(110, 22);
             this.enterSumTextBox.TabIndex = 1;
+            this.enterSumTextBox.KeyPress += new KeyPressEventHandler(enterSumTextBox_KeyPress);
             // 
             // label1
             // 
