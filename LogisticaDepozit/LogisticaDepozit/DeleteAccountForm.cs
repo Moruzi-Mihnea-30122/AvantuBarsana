@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -48,7 +49,7 @@ namespace LogisticaDepozit
 
         private void confirmButtonClicked(object sender, EventArgs e)
         {
-            if (passwordTextBox.Text == this.menuPage.password)
+            if (HashPassword(passwordTextBox.Text) == this.menuPage.password)
             {
                 myCon.ConnectionString = HomePageForm.connString;
                 myCon.Open();
@@ -74,6 +75,19 @@ namespace LogisticaDepozit
             else
             {
                 MessageBox.Show("Incorrect password");
+            }
+        }
+        private string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                foreach (byte b in bytes)
+                {
+                    builder.Append(b.ToString("x2"));
+                }
+                return builder.ToString();
             }
         }
     }
