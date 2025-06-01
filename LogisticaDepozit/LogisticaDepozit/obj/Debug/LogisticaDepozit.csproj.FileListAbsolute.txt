@@ -116,3 +116,7 @@ C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\Log
 C:\Apps\II\Proiect\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.ManagerVerificationForm.resources
 E:\Proiect_II\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.ManagerVerificationForm.resources
 E:\Proiect_II\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.VerifyChangeMail.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.AddManagerForm.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.ManagerVerificationForm.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.VerificationForm.resources
+C:\Users\modan\Documents\Facultate stuff\An3S2\AvantuBarsana\LogisticaDepozit\LogisticaDepozit\obj\Debug\LogisticaDepozit.VerifyChangeMail.resources

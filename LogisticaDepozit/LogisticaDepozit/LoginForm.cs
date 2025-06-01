@@ -47,7 +47,7 @@ namespace LogisticaDepozit
             {
                 myCon.Open();
 
-                SqlCommand command = new SqlCommand("SELECT Password FROM Users WHERE Username = @username", myCon);
+                SqlCommand command = new SqlCommand("SELECT Password FROM Users WHERE UserID = @username", myCon);
                 command.Parameters.AddWithValue("@username", username);
 
                 SqlDataReader reader = command.ExecuteReader();

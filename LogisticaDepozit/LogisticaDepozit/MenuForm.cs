@@ -31,6 +31,7 @@ namespace LogisticaDepozit
         internal string email;
         internal double balance;
         internal string userID;
+        internal string nickname;
         
         public MenuForm(LoginForm form, double balance, string username)
         {
@@ -60,7 +61,7 @@ namespace LogisticaDepozit
 
                 myCon.Open();
 
-                SqlCommand command = new SqlCommand("SELECT *\nFROM Users\nWHERE Username LIKE '"+ this.username +"';",myCon);
+                SqlCommand command = new SqlCommand("SELECT *\nFROM Users\nWHERE UserID LIKE '"+ this.username +"';",myCon);
                 SqlDataReader reader = command.ExecuteReader();
 
                 if (reader.Read())
@@ -69,6 +70,8 @@ namespace LogisticaDepozit
                     this.email = reader.GetString(2);
                     this.role = reader.GetString(3);
                     this.userID = reader.GetString(0);
+                    usernameLabel.Text = reader.GetString(5);
+                    nickname = reader.GetString(5);
                     
                     
                         this.balance = Convert.ToDouble(reader.GetString(4));

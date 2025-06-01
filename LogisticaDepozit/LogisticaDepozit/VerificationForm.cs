@@ -16,19 +16,21 @@ namespace LogisticaDepozit
         private readonly string email;
         private readonly string username;
         private readonly string hashedPassword;
+        private readonly string nickname;
         private readonly VerificationManager verificationManager;
         private bool clicked;
         private DateTime lastResendTime = DateTime.MinValue;
         private Timer resendCooldownTimer;
         //private Button btnResend;
 
-        public VerificationForm(string email, VerificationManager manager, string username, string hashedPassword)
+        public VerificationForm(string email, VerificationManager manager, string username, string hashedPassword, string nickname)
         {
             InitializeComponent();
             this.email = email;
             this.username = username;
             this.hashedPassword = hashedPassword;
             this.verificationManager = manager;
+            this.nickname = nickname;
             //btn_RESEND.Enabled = false;
 
 
@@ -36,6 +38,7 @@ namespace LogisticaDepozit
             resendCooldownTimer = new Timer();
             resendCooldownTimer.Interval = 1000;
             resendCooldownTimer.Tick += new EventHandler(ResendCooldownTimer_Tick); // FIX: asigură conectarea evenimentului
+            this.nickname = nickname;
         }
 
         private void btnVerify_Click(object sender, EventArgs e)
@@ -59,7 +62,7 @@ namespace LogisticaDepozit
                         string query = "INSERT INTO Users (UserID, Password, Email, Role, Balance, Username) VALUES (@userID, @password, @email, @role, @balance, @username)";
                         SqlCommand cmd = new SqlCommand(query, conn);
                         cmd.Parameters.AddWithValue("@userID", username);
-                        cmd.Parameters.AddWithValue("@username", username);
+                        cmd.Parameters.AddWithValue("@username", nickname);
                         cmd.Parameters.AddWithValue("@password", hashedPassword);
                         cmd.Parameters.AddWithValue("@email", email);
                         cmd.Parameters.AddWithValue("@role", role);

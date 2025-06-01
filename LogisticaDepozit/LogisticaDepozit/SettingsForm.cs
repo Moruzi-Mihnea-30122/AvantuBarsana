@@ -30,8 +30,8 @@ namespace LogisticaDepozit
 
             this.MinimumSize = new Size(this.Size.Width, this.Size.Height);
             this.MaximumSize = new Size(this.Size.Width, this.Size.Height);
-
-            this.overviewUsernameTextBox.Text = this.menuPage.username.ToString();
+             
+            this.overviewUsernameTextBox.Text = this.menuPage.nickname.ToString();
             this.overviewBalanceTextBox.Text = this.menuPage.balance.ToString() + " RON";
             this.overviewEmailTextBox.Text = this.menuPage.email.ToString();
 

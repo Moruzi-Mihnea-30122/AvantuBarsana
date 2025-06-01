@@ -159,7 +159,7 @@ namespace LogisticaDepozit
             //
             TextBox textBoxTotalPrice = new TextBox();
             textBoxTotalPrice.Text = balance.ToString() + " RON";
-            textBoxTotalPrice.Location = new Point(485, 70);
+            textBoxTotalPrice.Location = new Point(480, 69);
             textBoxTotalPrice.Size = new Size(102, 26);
             textBoxTotalPrice.ReadOnly = true;
             this.Controls.Add(textBoxTotalPrice);

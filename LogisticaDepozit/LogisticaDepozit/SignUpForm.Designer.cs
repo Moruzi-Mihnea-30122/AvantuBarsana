@@ -43,6 +43,8 @@ namespace LogisticaDepozit
             this.txtBox_ConfPassS = new System.Windows.Forms.TextBox();
             this.txtBox_UserS = new System.Windows.Forms.TextBox();
             this.checkBoxShowPassword = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.nicknameTextBox = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +58,8 @@ namespace LogisticaDepozit
             this.toolStripBackS});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(27, 27);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(39, 29);
             this.toolStrip1.TabIndex = 23;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
@@ -67,16 +70,17 @@ namespace LogisticaDepozit
             this.toolStripBackS.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBackS.Image")));
             this.toolStripBackS.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripBackS.Name = "toolStripBackS";
-            this.toolStripBackS.Size = new System.Drawing.Size(24, 24);
+            this.toolStripBackS.Size = new System.Drawing.Size(34, 24);
             this.toolStripBackS.Text = "toolStripButton1";
             // 
             // signUpButton
             // 
             this.signUpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
             this.signUpButton.ForeColor = System.Drawing.Color.White;
-            this.signUpButton.Location = new System.Drawing.Point(23, 207);
+            this.signUpButton.Location = new System.Drawing.Point(34, 318);
+            this.signUpButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.signUpButton.Name = "signUpButton";
-            this.signUpButton.Size = new System.Drawing.Size(294, 31);
+            this.signUpButton.Size = new System.Drawing.Size(441, 48);
             this.signUpButton.TabIndex = 20;
             this.signUpButton.Text = "Sign Up";
             this.signUpButton.UseVisualStyleBackColor = false;
@@ -85,86 +89,115 @@ namespace LogisticaDepozit
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 150);
+            this.label4.Location = new System.Drawing.Point(28, 231);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 13);
+            this.label4.Size = new System.Drawing.Size(137, 20);
             this.label4.TabIndex = 19;
             this.label4.Text = "Confirm Password";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 103);
+            this.label3.Location = new System.Drawing.Point(28, 158);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.Size = new System.Drawing.Size(78, 20);
             this.label3.TabIndex = 18;
             this.label3.Text = "Password";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(194, 49);
+            this.label2.Location = new System.Drawing.Point(291, 75);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 17;
             this.label2.Text = "E-mail";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 49);
+            this.label1.Location = new System.Drawing.Point(28, 75);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(83, 20);
             this.label1.TabIndex = 16;
             this.label1.Text = "Username";
             // 
             // txtBox_MailS
             // 
-            this.txtBox_MailS.Location = new System.Drawing.Point(197, 68);
+            this.txtBox_MailS.Location = new System.Drawing.Point(296, 105);
+            this.txtBox_MailS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBox_MailS.Name = "txtBox_MailS";
-            this.txtBox_MailS.Size = new System.Drawing.Size(119, 20);
+            this.txtBox_MailS.Size = new System.Drawing.Size(176, 26);
             this.txtBox_MailS.TabIndex = 15;
             // 
             // txtBox_PassS
             // 
-            this.txtBox_PassS.Location = new System.Drawing.Point(23, 120);
+            this.txtBox_PassS.Location = new System.Drawing.Point(34, 185);
+            this.txtBox_PassS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBox_PassS.Name = "txtBox_PassS";
-            this.txtBox_PassS.Size = new System.Drawing.Size(119, 20);
+            this.txtBox_PassS.Size = new System.Drawing.Size(176, 26);
             this.txtBox_PassS.TabIndex = 14;
             this.txtBox_PassS.UseSystemPasswordChar = true;
             // 
             // txtBox_ConfPassS
             // 
-            this.txtBox_ConfPassS.Location = new System.Drawing.Point(23, 166);
+            this.txtBox_ConfPassS.Location = new System.Drawing.Point(34, 255);
+            this.txtBox_ConfPassS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBox_ConfPassS.Name = "txtBox_ConfPassS";
-            this.txtBox_ConfPassS.Size = new System.Drawing.Size(119, 20);
+            this.txtBox_ConfPassS.Size = new System.Drawing.Size(176, 26);
             this.txtBox_ConfPassS.TabIndex = 13;
             this.txtBox_ConfPassS.UseSystemPasswordChar = true;
             // 
             // txtBox_UserS
             // 
-            this.txtBox_UserS.Location = new System.Drawing.Point(23, 68);
+            this.txtBox_UserS.Location = new System.Drawing.Point(34, 105);
+            this.txtBox_UserS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBox_UserS.Name = "txtBox_UserS";
-            this.txtBox_UserS.Size = new System.Drawing.Size(119, 20);
+            this.txtBox_UserS.Size = new System.Drawing.Size(176, 26);
             this.txtBox_UserS.TabIndex = 12;
             // 
             // checkBoxShowPassword
             // 
             this.checkBoxShowPassword.AutoSize = true;
-            this.checkBoxShowPassword.Location = new System.Drawing.Point(197, 146);
+            this.checkBoxShowPassword.Location = new System.Drawing.Point(295, 255);
+            this.checkBoxShowPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxShowPassword.Name = "checkBoxShowPassword";
-            this.checkBoxShowPassword.Size = new System.Drawing.Size(102, 17);
+            this.checkBoxShowPassword.Size = new System.Drawing.Size(148, 24);
             this.checkBoxShowPassword.TabIndex = 24;
             this.checkBoxShowPassword.Text = "Show Password";
             this.checkBoxShowPassword.UseVisualStyleBackColor = true;
-            this.checkBoxShowPassword.CheckedChanged += new EventHandler(checkBoxShowPassword_CheckedChanged);
+            this.checkBoxShowPassword.CheckedChanged += new System.EventHandler(this.checkBoxShowPassword_CheckedChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(291, 158);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(79, 20);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Nickname";
+            // 
+            // nicknameTextBox
+            // 
+            this.nicknameTextBox.Location = new System.Drawing.Point(297, 188);
+            this.nicknameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.nicknameTextBox.Name = "nicknameTextBox";
+            this.nicknameTextBox.Size = new System.Drawing.Size(176, 26);
+            this.nicknameTextBox.TabIndex = 25;
             // 
             // SignUpForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
-            this.ClientSize = new System.Drawing.Size(343, 257);
+            this.ClientSize = new System.Drawing.Size(514, 395);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.nicknameTextBox);
             this.Controls.Add(this.checkBoxShowPassword);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.signUpButton);
@@ -177,9 +210,10 @@ namespace LogisticaDepozit
             this.Controls.Add(this.txtBox_ConfPassS);
             this.Controls.Add(this.txtBox_UserS);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(160)))));
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "SignUpForm";
             this.Text = "SignUpForm";
+            this.Load += new System.EventHandler(this.SignUpForm_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -201,5 +235,7 @@ namespace LogisticaDepozit
         private System.Windows.Forms.TextBox txtBox_ConfPassS;
         private System.Windows.Forms.TextBox txtBox_UserS;
         private System.Windows.Forms.CheckBox checkBoxShowPassword;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox nicknameTextBox;
     }
 }

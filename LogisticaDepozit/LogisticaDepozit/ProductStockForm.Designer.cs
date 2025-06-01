@@ -528,6 +528,7 @@
             this.Text = "ProductStockForm";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

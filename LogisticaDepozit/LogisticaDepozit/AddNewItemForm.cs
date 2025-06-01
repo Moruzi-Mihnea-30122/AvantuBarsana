@@ -51,7 +51,7 @@ namespace LogisticaDepozit
 
                 this.Hide();
                 productStockForm.Controls.Clear();
-                productStockForm.Close();
+                productStockForm.Hide();
                 ProductStockForm productStockForm1 = new ProductStockForm(productStockForm.balance, menuPage);
                 productStockForm1.Show();
             }

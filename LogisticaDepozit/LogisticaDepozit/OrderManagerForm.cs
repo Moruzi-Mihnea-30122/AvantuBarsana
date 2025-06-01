@@ -131,8 +131,6 @@ namespace LogisticaDepozit
         private void toolStripBackS_Click(object sender, EventArgs e)
         {
             this.Close();
-            MenuForm menuPage1 = new MenuForm(logInForm, balance, null);
-            menuPage1.Show();
         }
 
         public OrderManagerForm(MenuForm menuPage, double balance)
@@ -181,6 +179,12 @@ namespace LogisticaDepozit
 
 
             InitializeComponent();
+        }
+        private void formClosing(object sender, FormClosingEventArgs e)
+        {
+            MenuForm menuPage1 = new MenuForm(logInForm, balance, null);
+            //menuPage1.balance = this.balance;
+            menuPage1.Show();
         }
     }
 }

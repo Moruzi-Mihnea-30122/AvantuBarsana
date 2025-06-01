@@ -149,9 +149,10 @@ namespace LogisticaDepozit
             myCon.Open();
             SqlCommand command = new SqlCommand("SELECT *\nFROM Products\n", myCon);
             SqlDataReader reader = command.ExecuteReader();
+            lastIndex = 0;
             while (reader.Read())
             {
-                lastIndex = Convert.ToInt32(reader.GetString(0));
+                lastIndex++;
                 insertProductListed(reader.GetString(1), reader.GetString(3), reader.GetString(2), panel);
             }
 
@@ -236,7 +237,10 @@ namespace LogisticaDepozit
         private void toolStripBackS_Click(object sender, EventArgs e)
         {
             this.Close();
-            MenuForm menuPage1 = new MenuForm(logInForm,balance, null);
+        }
+        private void formClosing(object sender, FormClosingEventArgs e)
+        {
+            MenuForm menuPage1 = new MenuForm(logInForm, balance, null);
             //menuPage1.balance = this.balance;
             menuPage1.Show();
         }

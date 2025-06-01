@@ -44,7 +44,7 @@ namespace LogisticaDepozit
 
         private void signUpButtonClick(object sender, EventArgs e)
         {
-            if (txtBox_UserS.Text == "" || txtBox_MailS.Text == "" || txtBox_PassS.Text == "" || txtBox_ConfPassS.Text == "" )
+            if (txtBox_UserS.Text == "" || txtBox_MailS.Text == "" || txtBox_PassS.Text == "" || txtBox_ConfPassS.Text == "" || nicknameTextBox.Text == "")
             {
                 MessageBox.Show("Completați toate câmpurile!");
                 return;
@@ -71,12 +71,17 @@ namespace LogisticaDepozit
                 MessageBox.Show("Parola trebuie sa aiba minim 7 caractere!");
                 return;
             }
+            if (nicknameTextBox.Text.Length < 7)
+            {
+                MessageBox.Show("Nickname-ul trebuie sa aiba minim 7 caractere!");
+                return;
+            }
             userEmail = txtBox_MailS.Text;
             verificationCode = verificationManager.GenerateVerificationCode(userEmail);
 
             if (emailService.SendVerificationCode(userEmail, verificationCode))
             {
-                VerificationForm verificationForm = new VerificationForm(userEmail, verificationManager, txtBox_UserS.Text, HashPassword(txtBox_PassS.Text));
+                VerificationForm verificationForm = new VerificationForm(userEmail, verificationManager, txtBox_UserS.Text, HashPassword(txtBox_PassS.Text), nicknameTextBox.Text);
                 verificationForm.Show();
                 this.Hide();
             }
@@ -129,6 +134,11 @@ namespace LogisticaDepozit
                 }
                 return builder.ToString();
            }
+        }
+
+        private void SignUpForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
